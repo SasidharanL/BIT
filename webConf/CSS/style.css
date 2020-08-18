@@ -1,7 +1,3 @@
-*, *::before , *::after{
-    box-sizing: border-box;
-}
-
 html, body{
     margin: 0;
     padding: 0;
@@ -12,108 +8,6 @@ html, body{
     box-sizing: border-box;
     color: rgb(35, 37, 37);
     font-family: 'Ubuntu', sans-serif;
-}
-
-a, h1, h2, h3, h4, h5, h6, span{
-    color: rgb(35, 37, 37);
-} 
-
-ul, h1, h2, h3, h4, h5, h6{
-    padding: 0;
-    margin: 0;
-}
-
-/* container */
-
-.container{
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-@media (min-width: 576px) {
-
-    .container{
-        max-width: 540px;
-    }
-}
-
-@media (min-width: 768px) {
-
-    .container{
-        max-width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
-
-    .container{
-        max-width: 960px;
-    }
-}
-
-@media (min-width: 1200px) {
-
-    .container{
-        max-width: 1140px;
-    }
-}
-
-/* row */
-
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px
-}
-
-/* col */
-.col, .col-sm, .col-lg, .col-md{
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px
-}
-
-.col{
-    -ms-flex-preferred-size: 0;
-    flex-basis: 0;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    max-width: 100%
-}
-
-/* margin */
-
-.mr-auto{
-    margin-right: auto !important;
-}
-
-.ml-auto{
-    margin-left: auto !important;
-}
-
-.mt-auto{
-    margin-top: auto !important;
-}
-
-.mb-auto{
-    margin-bottom: auto !important;
-}
-
-/* position */
-
-.pos-rel{
-    position: relative !important;
-}
-
-.pos-asol{
-    position: absolute !important;
 }
 
 /* header */
@@ -202,38 +96,6 @@ ul, h1, h2, h3, h4, h5, h6{
     width: 100%;
 }
 
-/* button */
-
-.btn{
-    color: #fff;
-    font-size: 17px;
-    padding: 10px 15px;
-    border-radius: 20px;
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    background-color: rgb(11, 166, 187);
-    transition: all 0.25s ease-in;
-}
-
-.btn:hover{
-    color: #fff;
-    background-color: #000;
-}
-
-/* align */
-
-.align-item-center{
-    align-items: center !important;
-}
-
-/* section */
-
-section{
-    display: block;
-}
-
 /* banner */
 
 .banner{
@@ -287,10 +149,10 @@ section{
 
 .counter-wrap:before{
     position: absolute;
+    z-index: -1;
     top: 0;
     left: -5%;
     content: "";
-    z-index: -1;
     width: 200%;
     height: 100%;
     background: #ffffff;
@@ -309,29 +171,15 @@ section{
 }
 
 .clock{
-    padding: 10px 20px;
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .clock span{
     font-weight: 600;
     font-size: 24px;
-    padding-right: 15px;
-}
-
-span.turn{
-    animation: turn 0.7s ease forwards;
-}
-
-@keyframes turn{
-    0%{transform: rotateX(0deg)}
-    100%{transform: rotateX(360deg)}
-}
-
-/* images */
-
-img{
-    outline: none;
-    vertical-align: middle;
+    padding-right: 5px;
 }
 
 /* about banner */
@@ -351,11 +199,6 @@ img{
     border: 5px solid #fff;
 }
 
-.img-fluid{
-    max-width: 100%;
-    height: auto;
-}
-
 .about-text h1{
     font-size: 50px;
     margin: 20px 0px;
@@ -370,22 +213,3 @@ img{
     padding: 15px 40px;
     border-radius: 30px;
 }
-
-/* strole-text */
-
-.stroke-text{
-    font-size: 80px;
-    font-weight: 800;
-    color: transparent;
-    font-family: sans-serif;
-    text-transform: uppercase;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #ddd;
-}
-
-/* disappear */
-
-.disappear{
-    display: none;
-}
-

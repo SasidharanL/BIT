@@ -47,7 +47,11 @@
     }
 
     .stroke-text{
-        font-size: 50px;
+        font-size: 60px;
+    }
+
+    .counter-wrap{
+        padding: 25px 15px;
     }
 
     .counter-stat h1{
@@ -59,8 +63,8 @@
     }
 
     .clock span{
-        font-size: 16px;
-        font-weight: 500;
+        font-size: 14px;
+        font-weight: 300;
     }
 
     .about-content{
@@ -75,15 +79,14 @@
 }
 
 @media (min-width: 320px){
-    .col-lg, .col-sm, .col-md{
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
     .stroke-text{
         font-size: 60px;
     }
 
+    .counter-wrap{
+        padding: 3rem 2rem;
+    }
+ 
     .counter-stat h1{
         font-size: 17px;
     }
@@ -115,7 +118,7 @@
     }
 }
 
-@media (min-width: 576px){
+@media (min-width: 576px){    
     .banner .btn{
         font-size: 16px;
     }
@@ -126,6 +129,16 @@
     
     .ban-title span{
         font-size: 20px;
+    }
+
+    .img-block{
+        left: 10%;
+        top: 80px;
+    }
+
+    .col-lg, .col-md, .col-sm{
+        max-width: 100%;
+        flex: 0 0 100%;
     }
 }
 
@@ -174,7 +187,7 @@
 
     .clock span{
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 600;
     }
 
     .about-banner {
@@ -240,7 +253,7 @@
     }
 
     .counter-stat h1 span{
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .img-block{
@@ -256,5 +269,7 @@
 }
 
 @media (min-width: 1200px) {
-    
+    .counter-stat h1 span{
+        font-size: 50px;
+    }
 }
