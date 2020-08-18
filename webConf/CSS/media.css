@@ -64,7 +64,7 @@
 
     .clock span{
         font-size: 14px;
-        font-weight: 300;
+        font-weight: 400;
     }
 
     .about-content{
@@ -84,9 +84,9 @@
     }
 
     .counter-wrap{
-        padding: 3rem 2rem;
+        padding: 25px 15px;
     }
- 
+
     .counter-stat h1{
         font-size: 17px;
     }
@@ -129,6 +129,10 @@
     
     .ban-title span{
         font-size: 20px;
+    }
+
+    .counter-wrap{
+        padding: 3rem 2rem;
     }
 
     .img-block{
@@ -271,5 +275,17 @@
 @media (min-width: 1200px) {
     .counter-stat h1 span{
         font-size: 50px;
+    }
+}
+
+@media (max-width: 768px){
+    .banner{
+        min-height: 500px;
+    }
+}
+
+@media (max-width: 300px){
+    .about-banner{
+        padding-top: 0;
     }
 }
