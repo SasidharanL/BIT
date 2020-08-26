@@ -68,8 +68,8 @@
     function galleryMasonry(){
         if ( $('#gallery').length ){
             $('#gallery').imagesLoaded( function() {
-              // images have loaded
-                // Activate isotope in container
+             // images have loaded
+             //Activate isotope in container
                 $("#gallery").isotope({
                     itemSelector: ".gallery_item",
                     layoutMode: 'masonry',

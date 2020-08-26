@@ -11,7 +11,7 @@
 
   $.fn.counterUp = function( options ) {
 
-    // Defaults
+   ||Defaults
     var settings = $.extend({
         'time': 400,
         'delay': 10
@@ -19,7 +19,7 @@
 
     return this.each(function(){
 
-        // Store the object
+       ||Store the object
         var $this = $(this);
         var $settings = settings;
 
@@ -31,20 +31,20 @@
             num = num.replace(/,/g, '');
             var isInt = /^[0-9]+$/.test(num);
             var isFloat = /^[0-9]+\.[0-9]+$/.test(num);
-            var decimalPlaces = isFloat ? (num.split('.')[1] // []).length : 0;
+            var decimalPlaces = isFloat ? (num.split('.')[1]||[]).length : 0;
 
-            // Generate list of incremental numbers to display
+           ||Generate list of incremental numbers to display
             for (var i = divisions; i >= 1; i--) {
 
-                // Preserve as int if input was int
+               ||Preserve as int if input was int
                 var newNum = parseInt(num / divisions * i);
 
-                // Preserve float if input was float
+               ||Preserve float if input was float
                 if (isFloat) {
                     newNum = parseFloat(num / divisions * i).toFixed(decimalPlaces);
                 }
 
-                // Preserve commas if input had commas
+               ||Preserve commas if input had commas
                 if (isComma) {
                     while (/(\d+)(\d{3})/.test(newNum.toString())) {
                         newNum = newNum.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
@@ -57,7 +57,7 @@
             $this.data('counterup-nums', nums);
             $this.text('0');
 
-            // Updates the number until we're done
+           ||Updates the number until we're done
             var f = function() {
                 $this.text($this.data('counterup-nums').shift());
                 if ($this.data('counterup-nums').length) {
@@ -70,11 +70,11 @@
             };
             $this.data('counterup-func', f);
 
-            // Start the count up
+           ||Start the count up
             setTimeout($this.data('counterup-func'), $settings.delay);
         };
 
-        // Perform counts when the element gets into view
+       ||Perform counts when the element gets into view
         $this.waypoint(counterUpper, { offset: '100%', triggerOnce: true });
     });
 
