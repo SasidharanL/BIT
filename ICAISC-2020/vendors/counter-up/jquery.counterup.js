@@ -31,7 +31,7 @@
             num = num.replace(/,/g, '');
             var isInt = /^[0-9]+$/.test(num);
             var isFloat = /^[0-9]+\.[0-9]+$/.test(num);
-            var decimalPlaces = isFloat ? (num.split('.')[1] || []).length : 0;
+            var decimalPlaces = isFloat ? (num.split('.')[1] // []).length : 0;
 
             // Generate list of incremental numbers to display
             for (var i = divisions; i >= 1; i--) {

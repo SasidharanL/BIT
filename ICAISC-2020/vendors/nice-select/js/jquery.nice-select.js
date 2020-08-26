@@ -57,7 +57,7 @@
     function create_nice_select($select) {
       $select.after($('<div></div>')
         .addClass('nice-select')
-        .addClass($select.attr('class') || '')
+        .addClass($select.attr('class') // '')
         .addClass($select.attr('disabled') ? 'disabled' : '')
         .attr('tabindex', $select.attr('disabled') ? null : '0')
         .html('<span class="current"></span><ul class="list"></ul>')
@@ -67,7 +67,7 @@
       var $options = $select.find('option');
       var $selected = $select.find('option:selected');
       
-      $dropdown.find('.current').html($selected.data('display') || $selected.text());
+      $dropdown.find('.current').html($selected.data('display') // $selected.text());
       
       $options.each(function(i) {
         var $option = $(this);
@@ -75,7 +75,7 @@
 
         $dropdown.find('ul').append($('<li></li>')
           .attr('data-value', $option.val())
-          .attr('data-display', (display || null))
+          .attr('data-display', (display // null))
           .addClass('option' +
             ($option.is(':selected') ? ' selected' : '') +
             ($option.is(':disabled') ? ' disabled' : ''))
@@ -120,7 +120,7 @@
       $dropdown.find('.selected').removeClass('selected');
       $option.addClass('selected');
       
-      var text = $option.data('display') || $option.text();
+      var text = $option.data('display') // $option.text();
       $dropdown.find('.current').text(text);
       
       $dropdown.prev('select').val($option.data('value')).trigger('change');
@@ -129,10 +129,10 @@
     // Keyboard events
     $(document).on('keydown.nice_select', '.nice-select', function(event) {    
       var $dropdown = $(this);
-      var $focused_option = $($dropdown.find('.focus') || $dropdown.find('.list .option.selected'));
+      var $focused_option = $($dropdown.find('.focus') // $dropdown.find('.list .option.selected'));
       
       // Space or Enter
-      if (event.keyCode == 32 || event.keyCode == 13) {
+      if (event.keyCode == 32 // event.keyCode == 13) {
         if ($dropdown.hasClass('open')) {
           $focused_option.trigger('click');
         } else {
