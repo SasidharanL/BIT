@@ -1,4 +1,3 @@
-/*! Stellar.js v0.6.2 / Copyright 2013, Mark Dalgleish / http://markdalgleish.com/projects/stellar.js / http://markdalgleish.mit-license.org */
 (function (e, t, n, r) {
     function d(t, n) {
         this.element = t, this.options = e.extend({}, s, n), this._defaults = s, this._name = i, this.init()
@@ -80,7 +79,7 @@
             }
         },
         a = function () {
-            var t = /^(Moz/Webkit/Khtml/O/ms/Icab)(?=[A-Z])/,
+            var t = /^(Moz|Webkit|Khtml|O|ms|Icab)(?=[A-Z])/,
                 n = e("script")[0].style,
                 r = "",
                 i;
@@ -110,7 +109,7 @@
         } : function (e) {
             return e.css("background-position").split(" ")
         },
-        p = t.requestAnimationFrame||t.webkitRequestAnimationFrame||t.mozRequestAnimationFrame||t.oRequestAnimationFrame||t.msRequestAnimationFrame||function (e) {
+        p = t.requestAnimationFrame || t.webkitRequestAnimationFrame || t.mozRequestAnimationFrame || t.oRequestAnimationFrame || t.msRequestAnimationFrame || function (e) {
             setTimeout(e, 1e3 / 60)
         };
     d.prototype = {
@@ -120,7 +119,7 @@
             }), this.options.scrollProperty === "scroll" ? this._handleScrollEvent() : this._startAnimationLoop()
         },
         _defineElements: function () {
-            this.element === n.body && (this.element = t), this.$scrollElement = e(this.element), this.$element = this.element === t ? e("body") : this.$scrollElement, this.$viewportElement = this.options.viewportElement !== r ? e(this.options.viewportElement) : this.$scrollElement[0] === t||this.options.scrollProperty === "scroll" ? this.$scrollElement : this.$scrollElement.parent()
+            this.element === n.body && (this.element = t), this.$scrollElement = e(this.element), this.$element = this.element === t ? e("body") : this.$scrollElement, this.$viewportElement = this.options.viewportElement !== r ? e(this.options.viewportElement) : this.$scrollElement[0] === t || this.options.scrollProperty === "scroll" ? this.$scrollElement : this.$scrollElement.parent()
         },
         _defineGetters: function () {
             var e = this,
@@ -141,7 +140,7 @@
                 i(t.$scrollElement, e)
             } : e.noop, this._setScrollTop = typeof s == "function" ? function (e) {
                 s(t.$scrollElement, e)
-            } : e.noop, this._setPosition = r.setPosition||function (e, n, i, s, o) {
+            } : e.noop, this._setPosition = r.setPosition || function (e, n, i, s, o) {
                 t.options.horizontalScrolling && r.setLeft(e, n, i), t.options.verticalScrolling && r.setTop(e, s, o)
             }
         },
@@ -158,7 +157,7 @@
             var r = this,
                 i = r._getScrollLeft(),
                 s = r._getScrollTop();
-            (!n||!n.firstLoad) && this._reset(), this._setScrollLeft(0), this._setScrollTop(0), this._setOffsets(), this._findParticles(), this._findBackgrounds(), n && n.firstLoad && /WebKit/.test(navigator.userAgent) && e(t).load(function () {
+            (!n || !n.firstLoad) && this._reset(), this._setScrollLeft(0), this._setScrollTop(0), this._setOffsets(), this._findParticles(), this._findBackgrounds(), n && n.firstLoad && /WebKit/.test(navigator.userAgent) && e(t).load(function () {
                 var e = r._getScrollLeft(),
                     t = r._getScrollTop();
                 r._setScrollLeft(e + 1), r._setScrollTop(t + 1), r._setScrollLeft(e), r._setScrollTop(t)
@@ -273,7 +272,7 @@
                 h, p, d, v, m;
             if (this.currentScrollLeft === e && this.currentScrollTop === t && this.currentWidth === this.viewportWidth && this.currentHeight === this.viewportHeight) return;
             this.currentScrollLeft = e, this.currentScrollTop = t, this.currentWidth = this.viewportWidth, this.currentHeight = this.viewportHeight;
-            for (m = this.particles.length - 1; m >= 0; m--) i = this.particles[m], s = i.isFixed ? 1 : 0, this.options.horizontalScrolling ? (h = (e + i.horizontalOffset + this.viewportOffsetLeft + i.startingPositionLeft - i.startingOffsetLeft + i.parentOffsetLeft) * -(i.stellarRatio + s - 1) + i.startingPositionLeft, d = h - i.startingPositionLeft + i.startingOffsetLeft) : (h = i.startingPositionLeft, d = i.startingOffsetLeft), this.options.verticalScrolling ? (p = (t + i.verticalOffset + this.viewportOffsetTop + i.startingPositionTop - i.startingOffsetTop + i.parentOffsetTop) * -(i.stellarRatio + s - 1) + i.startingPositionTop, v = p - i.startingPositionTop + i.startingOffsetTop) : (p = i.startingPositionTop, v = i.startingOffsetTop), this.options.hideDistantElements && (l = !this.options.horizontalScrolling||d + i.width > (i.isFixed ? 0 : e) && d < (i.isFixed ? 0 : e) + this.viewportWidth + this.viewportOffsetLeft, f = !this.options.verticalScrolling||v + i.height > (i.isFixed ? 0 : t) && v < (i.isFixed ? 0 : t) + this.viewportHeight + this.viewportOffsetTop), l && f ? (i.isHidden && (this.options.showElement(i.$element), i.isHidden = !1), this._setPosition(i.$element, h, i.startingPositionLeft, p, i.startingPositionTop)) : i.isHidden||(this.options.hideElement(i.$element), i.isHidden = !0);
+            for (m = this.particles.length - 1; m >= 0; m--) i = this.particles[m], s = i.isFixed ? 1 : 0, this.options.horizontalScrolling ? (h = (e + i.horizontalOffset + this.viewportOffsetLeft + i.startingPositionLeft - i.startingOffsetLeft + i.parentOffsetLeft) * -(i.stellarRatio + s - 1) + i.startingPositionLeft, d = h - i.startingPositionLeft + i.startingOffsetLeft) : (h = i.startingPositionLeft, d = i.startingOffsetLeft), this.options.verticalScrolling ? (p = (t + i.verticalOffset + this.viewportOffsetTop + i.startingPositionTop - i.startingOffsetTop + i.parentOffsetTop) * -(i.stellarRatio + s - 1) + i.startingPositionTop, v = p - i.startingPositionTop + i.startingOffsetTop) : (p = i.startingPositionTop, v = i.startingOffsetTop), this.options.hideDistantElements && (l = !this.options.horizontalScrolling || d + i.width > (i.isFixed ? 0 : e) && d < (i.isFixed ? 0 : e) + this.viewportWidth + this.viewportOffsetLeft, f = !this.options.verticalScrolling || v + i.height > (i.isFixed ? 0 : t) && v < (i.isFixed ? 0 : t) + this.viewportHeight + this.viewportOffsetTop), l && f ? (i.isHidden && (this.options.showElement(i.$element), i.isHidden = !1), this._setPosition(i.$element, h, i.startingPositionLeft, p, i.startingPositionTop)) : i.isHidden || (this.options.hideElement(i.$element), i.isHidden = !0);
             for (m = this.backgrounds.length - 1; m >= 0; m--) o = this.backgrounds[m], s = o.isFixed ? 0 : 1, u = this.options.horizontalScrolling ? (e + o.horizontalOffset - this.viewportOffsetLeft - o.startingOffsetLeft + o.parentOffsetLeft - o.startingBackgroundPositionLeft) * (s - o.stellarRatio) + "px" : o.startingValueLeft, a = this.options.verticalScrolling ? (t + o.verticalOffset - this.viewportOffsetTop - o.startingOffsetTop + o.parentOffsetTop - o.startingBackgroundPositionTop) * (s - o.stellarRatio) + "px" : o.startingValueTop, c(o.$element, u, a)
         },
         _handleScrollEvent: function () {
@@ -283,7 +282,7 @@
                     e._repositionElements(), t = !1
                 },
                 r = function () {
-                    t||(p(n), t = !0)
+                    t || (p(n), t = !0)
                 };
             this.$scrollElement.bind("scroll." + this.name, r), r()
         },
@@ -295,8 +294,8 @@
         }
     }, e.fn[i] = function (t) {
         var n = arguments;
-        if (t === r||typeof t == "object") return this.each(function () {
-            e.data(this, "plugin_" + i)||e.data(this, "plugin_" + i, new d(this, t))
+        if (t === r || typeof t == "object") return this.each(function () {
+            e.data(this, "plugin_" + i) || e.data(this, "plugin_" + i, new d(this, t))
         });
         if (typeof t == "string" && t[0] !== "_" && t !== "init") return this.each(function () {
             var r = e.data(this, "plugin_" + i);
@@ -331,7 +330,7 @@
             l = ["ms", "moz", "webkit", "o"];
         for (var j = 0; j < l.length && !f.requestAnimationFrame; ++j) {
             f.requestAnimationFrame = f[l[j] + "RequestAnimationFrame"];
-            f.cancelAnimationFrame = f[l[j] + "CancelAnimationFrame"]||f[l[j] + "CancelRequestAnimationFrame"]
+            f.cancelAnimationFrame = f[l[j] + "CancelAnimationFrame"] || f[l[j] + "CancelRequestAnimationFrame"]
         }
         if (!f.requestAnimationFrame) {
             f.requestAnimationFrame = function (q, n) {
@@ -397,10 +396,10 @@
             var o;
             if (typeof l !== "boolean" && l !== b) {
                 o = d(l);
-                l = arguments[1]||false
+                l = arguments[1] || false
             } else {
                 o = this.$el;
-                l = l||false
+                l = l || false
             }
             var k = a.scrollTop(),
                 n = k + a.height(),
@@ -409,12 +408,12 @@
             if (l === true) {
                 return k <= j && n >= m
             }
-            return !(k > m||n < j)
+            return !(k > m || n < j)
         }
     });
     d.fn[e] = function (k) {
         var j = arguments;
-        if (k === b||typeof k === "object") {
+        if (k === b || typeof k === "object") {
             return this.each(function () {
                 if (!d.data(this, "plugin_" + e)) {
                     d.data(this, "plugin_" + e, new h(this, k))
@@ -431,4 +430,4 @@
             }
         }
     }
-})(window.jQuery||false, window, document);
+})(window.jQuery || false, window, document);
