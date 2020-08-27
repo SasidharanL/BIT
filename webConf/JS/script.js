@@ -1,7 +1,8 @@
-function display(){
+var btn = document.getElementById('nav-btn');
+btn.addEventListener('click', (event)=>{
     document.getElementById("drop-down").classList.toggle("active");
     document.getElementById("icon").classList.toggle("fa-times");
-}
+});  
 
 function updateTimer(deadline) {
     var time = deadline - new Date();
