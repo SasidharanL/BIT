@@ -108,6 +108,10 @@ button:focus {
   text-align: justify;
 }
 
+.text-fluid{
+  font-weight: 400;
+}
+
 .font-18{
   font-size: 18px !important;
 }
@@ -160,6 +164,21 @@ button:focus {
               url(../img/bg-img.jpg) no-repeat scroll center center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.bg{
+  color: rgb(48, 47, 47);
+  transition: all 0.25s ease-in-out;
+}
+
+.bg:hover{
+  background: -webkit-gradient(linear, left top, right top, from(#2c28b1), color-stop(70%, #9b5cf6));
+  background: -webkit-linear-gradient(left, #2c28b1 0%, #9b5cf6 70%);
+  background: -o-linear-gradient(left, #2c28b1 0%, #9b5cf6 70%);
+  background: linear-gradient(to right, #2c28b1 0%, #9b5cf6 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero{
@@ -4076,10 +4095,6 @@ h6 {
 .single-footer-widget .instafeed {
   margin-left: -5px;
   margin-right: -5px;
-}
-
-.single-footer-widget .instafeed li {
-  margin: 5px;
 }
 
 .single-footer-widget .subscribe_form {
