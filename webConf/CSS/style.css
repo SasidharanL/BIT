@@ -170,16 +170,23 @@ html, body{
     font-weight: 600;
 }
 
-.clock{
-    padding: 10px 0px;
+.clock, .units{
+    padding: 10px 0px 5px 0px;
     display: flex;
     justify-content: space-between;
 }
 
-.clock span{
+.units{
+    padding-top: 0;
+}
+
+.clock span, .units span{
     font-weight: 600;
     font-size: 24px;
-    padding-right: 5px;
+}
+
+.clock span{
+    text-align: center;
 }
 
 /* about banner */

@@ -1,81 +1,5 @@
 @media (min-width: 240px){
 
-    .col-lg, .col-sm, .col-md{
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-    .nav-toggler{
-        display: block;
-    }
-
-    .nav-item{
-        display: none;
-        top: 93px;
-        right: 0px;
-        z-index: 1000;
-        padding: 20px;
-        width: 200px;
-        background-color: rgb(247, 240, 225);
-    }
-
-    .nav-list{
-        display: block;
-        text-align: center;
-    }
-
-    .nav-link{
-        margin-bottom: 10px;
-        margin-right: 0;
-    }
-
-    .nav-item.active{
-        display: block;
-        position: absolute;
-    }
-
-    .ban-title h1{
-        font-size: 42px;
-    }
-
-    .ban-title span{
-        font-size: 20px;
-    }
-
-    .banner .btn{
-        font-size: 14px;
-    }
-
-    .stroke-text{
-        font-size: 60px;
-    }
-
-    .counter-wrap{
-        padding: 25px 15px;
-    }
-
-    .counter-stat h1{
-        font-size: 16px;
-    }
-
-    .counter-stat h1 span{
-        font-size: 26px;
-    }
-
-    .clock span{
-        font-size: 14px;
-        font-weight: 400;
-    }
-
-    .about-content{
-        padding: 5rem 0;
-    }
-
-    .img-block{
-        left: 10%;
-        top: 100px
-    }
-
 }
 
 @media (min-width: 320px){
@@ -95,7 +19,7 @@
         font-size: 30px;
     }
 
-    .clock span{
+    .clock span, .units span{
         font-size: 17px;
         font-weight: 400;
     }
@@ -140,10 +64,6 @@
         top: 80px;
     }
 
-    .col-lg, .col-md, .col-sm{
-        max-width: 100%;
-        flex: 0 0 100%;
-    }
 }
 
 @media (min-width: 768px){
@@ -163,24 +83,6 @@
        margin: auto;
     }
 
-    .col-lg{
-        -ms-flex: 0 0 58.333333%;
-        flex: 0 0 58.333333%;
-        max-width: 58.333333%;
-    }
-    
-    .col-sm{
-        -ms-flex: 0 0 36.777777%;
-        flex: 0 0 36.777777%;
-        max-width: 36.777777%;
-    }
-    
-    .col-md{
-        -ms-flex: 0 0 41.666667%;
-        flex: 0 0 41.666667%;
-        max-width: 41.666667%;
-    }
-
     .counter-stat h1{
         font-size: 18px;
     }
@@ -189,7 +91,7 @@
         font-size: 40px;
     }
 
-    .clock span{
+    .clock span, .units span{
         font-size: 20px;
         font-weight: 600;
     }
@@ -238,24 +140,6 @@
         margin: 0 10px 0 0;
     }
 
-    .col-lg{
-        -ms-flex: 0 0 58.333333%;
-        flex: 0 0 58.333333%;
-        max-width: 58.333333%;
-    }
-    
-    .col-sm{
-        -ms-flex: 0 0 36.777777%;
-        flex: 0 0 36.777777%;
-        max-width: 36.777777%;
-    }
-    
-    .col-md{
-        -ms-flex: 0 0 41.666667%;
-        flex: 0 0 41.666667%;
-        max-width: 41.666667%;
-    }
-
     .counter-stat h1 span{
         font-size: 40px;
     }
@@ -279,12 +163,123 @@
 }
 
 @media (max-width: 768px){
+    .nav-toggler{
+        display: block;
+    }
+
+    .nav-item{
+        display: none;
+        top: 93px;
+        right: 0px;
+        z-index: 1000;
+        padding: 20px;
+        width: 200px;
+        background-color: rgb(247, 240, 225);
+    }
+
+    .nav-list{
+        display: block;
+        text-align: center;
+    }
+
+    .nav-link{
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .nav-item.active{
+        display: block;
+        position: absolute;
+    }
+
     .banner{
         min-height: 500px;
     }
+
+    .banner .btn{
+        font-size: 16px;
+    }
+
+    .ban-title h1{
+        font-size: 60px;
+    }
+    
+    .ban-title span{
+        font-size: 20px;
+    }
+
+    .counter-wrap{
+        padding: 3rem 2rem;
+    }
+
+    .img-block{
+        left: 10%;
+        top: 80px;
+    }
+
 }
 
-@media (max-width: 300px){
+
+@media (max-width: 480px){
+    .banner{
+        min-height: 400px;
+    }
+
+    .ban-title h1{
+        font-size: 50px;
+    }
+
+    .ban-title span{
+        font-size: 20px;
+    }
+
+    .banner .btn{
+        font-size: 14px;
+        padding: 15px 15px;
+    }
+
+    .stroke-text{
+        font-size: 60px;
+    }
+
+    .counter-wrap{
+        padding: 25px 15px;
+    }
+
+    .counter-stat h1{
+        font-size: 16px;
+    }
+
+    .counter-stat h1 span{
+        font-size: 26px;
+    }
+
+    .clock span, .units span{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .about-content{
+        padding: 5rem 0;
+    }
+
+    .img-block{
+        left: 10%;
+        top: 100px
+    }
+
+}
+
+@media (max-width: 320px){
+    .ban-title h1{
+        font-size: 32px;
+    }
+
+    .banner .btn{
+        font-size: 12px;
+        padding: 15px 15px;
+    }
+
     .about-banner{
         padding-top: 0;
     }

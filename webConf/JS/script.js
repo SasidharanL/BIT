@@ -28,10 +28,10 @@ function startTimer(id, deadline) {
         var clock = document.getElementById(id);
         var timer = updateTimer(deadline);
 
-        clock.innerHTML = '<span>' + timer.days + ' Days</span>' +
-            '<span>' + timer.hours + ' Hours</span>' +
-            '<span>' + timer.minutes + ' Min</span>' +
-            '<span>' + timer.seconds + ' Sec</span>';
+        clock.innerHTML = '<span>' + timer.days + '</span>' +
+            '<span>' + timer.hours + '</span>' +
+            '<span>' + timer.minutes + '</span>' +
+            '<span>' + timer.seconds + '</span>';
 
         //animations
         var spans = clock.getElementsByTagName("span");
