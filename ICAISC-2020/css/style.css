@@ -110,10 +110,16 @@ button:focus {
 
 .text-fluid{
   font-weight: 400;
+  line-height: normal !important;
+  font-family: 'Roboto', sans-serif;
 }
 
 .font-18{
   font-size: 18px !important;
+}
+
+.font-17{
+  font-size: 17px !important;
 }
 
 .h-210{
