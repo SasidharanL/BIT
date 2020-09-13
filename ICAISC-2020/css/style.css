@@ -133,6 +133,12 @@ button:focus {
   color: rgb(36, 35, 35);
 }
 
+.info-txt{
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 0 !important;
+}
+
 .txt:before{
   content: '';
   position: absolute;
@@ -332,11 +338,11 @@ button:focus {
 }
 
 .header_area .navbar .nav .nav-item .nav-link:hover{
-  color: rgb(112, 204, 247);
+  color: rgb(4, 164, 238);
 }
 
 .header_area .navbar .nav .nav-item.active .nav-link{
-  color: rgb(112, 204, 247);
+  color: rgb(4, 164, 238);
 }
 
 .header_area .navbar .nav .nav-item .nav-link:after {
@@ -556,7 +562,7 @@ button:focus {
 
 .home_banner_area .banner_inner .banner_content h2 {
   margin-top: 0px;
-  font-size: 48px;
+  font-size: 44px;
   font-weight: bold;
   font-family: "Heebo", sans-serif;
   line-height: 54px;
