@@ -1,0 +1,42 @@
+function updateTimer(deadline) {
+    var time = deadline - new Date();
+    return {
+        'days': Math.floor(time / (1000 * 60 * 60 * 24)),
+        'hours': Math.floor((time / (1000 * 60 * 60)) % 24),
+        'minutes': Math.floor((time / 1000 / 60) % 60),
+        'seconds': Math.floor((time / 1000) % 60),
+        'total': time
+    };
+}
+
+function startTimer(id, deadline) {
+    var timerInterval = setInterval(function () {
+        var clock = document.getElementById(id);
+        var days = document.querySelector(".timer_day");
+        var hours = document.querySelector(".timer_hour");
+        var min = document.querySelector(".timer_minute");
+        var sec = document.querySelector(".timer_second");
+        var timer = updateTimer(deadline);
+
+        days.innerHTML = timer.days;
+        hours.innerHTML = timer.hours;
+        min.innerHTML = timer.minutes;
+        sec.innerHTML = timer.seconds;
+
+
+        //check for end of timer
+        if (timer.total < 1) {
+            clearInterval(timerInterval);
+            clock.innerHTML = '<h1>The countdown Finished!</h1>';
+            document.querySelectorAll(".timer__lable").classList.toggle('disappear');
+        }
+
+
+    }, 1000);
+}
+
+
+window.onload = function () {
+    var deadline = new Date("April 21, 2021 0:00:00");
+    startTimer("clock", deadline);
+};
