@@ -1,7 +1,15 @@
 var btn = document.getElementById('nav-btn');
+let icon = document.getElementById("icon");
 btn.addEventListener('click', (event)=>{
     document.getElementById("drop-down").classList.toggle("active");
-    document.getElementById("icon").classList.toggle("fa-times");
+    icon.classList.toggle("active");
+
+    if(icon.classList.contains("active")){
+        icon.classList.replace("fa-bars", "fa-times");
+    }
+    else{
+        icon.classList.replace("fa-times", "fa-bars");
+    }
 });  
 
 function updateTimer(deadline) {
@@ -53,6 +61,6 @@ function startTimer(id, deadline) {
 
 
 window.onload = function () {
-    var deadline = new Date("October 25, 2020 0:00:00");
+    var deadline = new Date("October 25, 2021 0:00:00");
     startTimer("clock", deadline);
 };

@@ -7,6 +7,9 @@ html, body{
     overflow-x: hidden;
     box-sizing: border-box;
     color: rgb(35, 37, 37);
+}
+
+body{
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -48,7 +51,7 @@ html, body{
     transition: all 0.25s ease-in-out;
 }
 
-.nav-toggler .fas{
+.nav-toggler .fa{
     font-size: 20px;
 }
 

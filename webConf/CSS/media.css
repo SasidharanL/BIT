@@ -165,12 +165,13 @@
 @media (max-width: 768px){
     .nav-toggler{
         display: block;
+        transition: 250ms ease;
     }
 
     .nav-item{
         display: none;
         top: 93px;
-        right: 0px;
+        right: -200px;
         z-index: 1000;
         padding: 20px;
         width: 200px;
@@ -190,6 +191,7 @@
     .nav-item.active{
         display: block;
         position: absolute;
+        right: 0px;
     }
 
     .banner{
