@@ -153,3 +153,11 @@ img {
     height: auto;
     transition: all 250ms ease;
 }
+
+.hide{
+    display: none !important;
+}
+
+.show{
+    display: block !important;
+}

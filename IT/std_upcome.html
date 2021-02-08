@@ -48,6 +48,10 @@
         <div class="container">
             <h2 class="heading">Upcoming Student Development Programme</h2>
             <div class="table-wrapper">
+                <div class="filter-sort">
+                    <span>Filter</span>
+                    <input type="text" id="filter-input" placeholder="Search..." class="input-tag">
+                </div>
                 <div class="table-head">
                     <table>
                         <thead class="table-heading">
@@ -59,8 +63,8 @@
                     </table>
                 </div>
                 <div class="table-content">
-                    <table>
-                        <tbody class="table-body">
+                    <table id="filter-table">
+                        <tbody class="table-body" id="table-body">
                             <tr>
                                 <td class="t-column-1">16-Jan-2021</td>
                                 <td class="t-column-2">Linear Equations in One Variable</td>
@@ -104,6 +108,9 @@
                             <tr>
                                 <td class="t-column-1">25-Jan-2021</td>
                                 <td class="t-column-2">Inverse Trigonometric Functions</td>
+                            </tr>
+                            <tr class="filter_info">
+                                <td class="t-info-column">No results found</td>
                             </tr>
                         </tbody>
                     </table>

@@ -48,6 +48,10 @@
         <div class="container">
             <h2 class="heading">Student Development Programme</h2>
             <div class="table-wrapper">
+                <div class="filter-sort">
+                    <span>Filter</span>
+                    <input type="text" id="filter-input" placeholder="Search..." class="input-tag">
+                </div>
                 <div class="table-head">
                     <table>
                         <thead class="table-heading">
@@ -61,8 +65,8 @@
                     </table>
                 </div>
                 <div class="table-content">
-                    <table>
-                        <tbody class="table-body">
+                    <table id="filter-table">
+                        <tbody class="table-body" id="table-body">
                             <tr>
                                 <td class="t-column-1">07-06-2020</td>
                                 <td class="t-column-2">LET'S SEE SCIENCE SIMPLE</td>
@@ -146,6 +150,9 @@
                                 <td class="t-column-2">FUNDAMENTAL CONCEPTS OF SCIENCE(VIII,IX,X,XI & XII)</td>
                                 <td class="t-column-3">STUDENT</td>
                                 <td class="t-column-4">4829</td>
+                            </tr>
+                            <tr class="filter_info">
+                                <td class="t-info-column">No results found</td>   
                             </tr>
                         </tbody>
                     </table>
