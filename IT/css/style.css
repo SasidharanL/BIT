@@ -1,5 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 html, body {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
@@ -257,6 +257,7 @@ table{
     width: 100%;
     position: relative;
     padding: 20px 0px;
+    display: flex;
 }
 
 .filter-sort span{
@@ -361,7 +362,7 @@ tbody tr:hover{
     .table-content{
         max-height: 81vh;
         border-radius: 6px !important;
-        box-shadow: 0px 5px 20px 0px rgb(82 81 81 / 50%);
+        box-shadow: 0px 5px 18px 0px rgb(82 81 81 / 50%);
     
     }
 
@@ -370,8 +371,14 @@ tbody tr:hover{
         display: block;
     }
 
+    .table-content tr{
+        padding: 20px 0px;
+    }
+
     .t-column-1, .t-column-2, .t-column-3, .t-column-4{
-        padding-left: 40% !important;
+        padding: 0px 15px;
+        padding-left: 55% !important;
+        margin: 15px 0px;
     }
 
     .table-content .t-column-1::before{
