@@ -33,7 +33,7 @@ header {
     padding: 10px 15px;
     position: relative;
     align-items: center;
-    box-shadow: 1px 1px 3.5px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 3.5px rgba(0, 0, 0, 0.4);
 }
 
 .logo {
@@ -98,14 +98,16 @@ header {
     position: absolute;
     top: 1.5px;
     left: 0px;
-    width: 0px;
+    right: 0px;
+    width: 100%;
     height: 2px;
+    transform: scale(0, 1);
     transition: all 250ms ease-in-out;
     background-color: #0477b9;
 }
 
 .nav-list-item:hover .nav-item::after, .nav-list-item.active .nav-item::after {
-    width: 100%;
+    transform: scale(1, 1);
 }
 
 #show-drop {
@@ -170,7 +172,7 @@ header {
     background-color: rgb(219, 218, 218);
 }
 
-/* ================================================= */
+/* ================================================== */
 
 input[type="radio"] {
     display: none;
@@ -184,37 +186,140 @@ section {
     padding: 3rem 0rem;
 }
 
-.imgbox {
-    overflow: hidden;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px -2px rgb(0 0 0 / 50%);
+.title-banner{
+    text-align: center;
+    margin-bottom: 80px;
 }
 
-.imgbox .img-fluid:hover {
-    transform: scale(1.02);
+.title-banner h2{
+    font-size: 38px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
 }
 
-.contact-profile{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+.title-banner span{
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.textbox {
-    width: 100%;
-    padding: 0px 15px;
+.home-page .row {
+    margin-bottom: 4rem;
 }
 
 .textbox h2 {
     font-size: 32px;
+    letter-spacing: 1px;
     font-family: 'Roboto Slab', sans-serif;
 }
 
-.textbox p {
+.textbox p, .textbox ul li {
+    font-size: 16px;
     color: rgba(0, 0, 0, 0.8);
-    font-size: 17px;
-    text-align: justify;
+    line-height: 20px;
+    padding-left: 25px;
+    margin-bottom: 10px;
 }
+
+/* ================================================== */
+
+/* contact */
+
+.contact-heading {
+    margin: 3rem 0rem 2rem 0rem;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    margin: 0;
+    height: 100%;
+}
+
+.contact-card {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 250px;
+    max-width: 310px;
+    width: 100%;
+    background-color: #f7f7f7;
+    color: #2B2B2B;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: all 250ms ease-in-out;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card .profile-image {
+    padding: 15% 10% 0;
+}
+
+.contact-card .profile-image img {
+    max-width: 100%;
+    vertical-align: top;
+    position: relative;
+    border-radius: 50%;
+    max-width: 40%;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-card .profile-image img:hover {
+    box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.05);
+}
+
+.contact-card .profile-content {
+    padding: 5% 10% 15%;
+}
+
+.profile-content h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 3px 0;
+    letter-spacing: 1px;
+}
+
+.profile-content h5 {
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+    color: #888;
+    letter-spacing: 1.2px;
+}
+
+.profile-content p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    color: rgb(0, 0, 0, 0.65);
+}
+
+.contact-icons i {
+    color: #999;
+    display: inline-block;
+    margin-right: 5px;
+    font-size: 1.5em;
+    transition: all 250ms ease-in-out;
+}
+
+.contact-icons i:hover {
+    color: #555;
+}
+
+/* ================================================== */
 
 hr {
     width: 80%;
@@ -232,7 +337,7 @@ hr {
 
 /* table */
 
-table{
+table {
     width: 100%;
     overflow: hidden;
     border-collapse: collapse;
@@ -240,27 +345,28 @@ table{
     border-top-right-radius: 6px;
 }
 
-.table-wrapper{
+.table-wrapper {
     position: relative;
     display: inline-block;
     width: 100%;
 }
 
-.table-wrapper table{
+.table-wrapper table {
     box-shadow: 0px 8px 30px 0px rgb(82 81 81 / 50%);
     border-radius: 0px;
     border-bottom-left-radius: 6px;
     border-bottom-right-radius: 6px;
 }
 
-.filter-sort{
+.filter-sort {
     width: 100%;
     position: relative;
     padding: 20px 0px;
     display: flex;
+    margin-top: 5px;
 }
 
-.filter-sort span{
+.filter-sort span {
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
@@ -268,9 +374,9 @@ table{
     padding-right: 10px;
 }
 
-.filter-sort .input-tag{
+.filter-sort .input-tag {
     line-height: 24px;
-    min-width: 200px;
+    min-width: 180px;
     max-width: 50%;
 }
 
@@ -280,7 +386,7 @@ table, table * {
     border-collapse: collapse;
 }
 
-.table-head table{
+.table-head table {
     border-radius: 0px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
@@ -301,19 +407,19 @@ table, table * {
     padding-left: 30px;
 }
 
-.t-column-1{
+.t-column-1 {
     width: 15%;
 }
 
-.t-column-2{
+.t-column-2 {
     width: 45%;
 }
 
-.t-column-3{
+.t-column-3 {
     width: 20%;
 }
 
-.t-column-4{
+.t-column-4 {
     width: 20%;
 }
 
@@ -324,13 +430,13 @@ td, th {
     line-height: 20px;
 }
 
-td{
+td {
     padding-left: 30px;
     font-size: 14px;
     color: rgb(0, 0, 0, 0.75);
 }
 
-.table-content{
+.table-content {
     max-height: 70vh;
     overflow-y: scroll;
     border-radius: 0px;
@@ -338,75 +444,72 @@ td{
     border-bottom-right-radius: 6px;
 }
 
-.table-content td{
+.table-content td {
     padding-left: 35px;
 }
 
-tbody tr:nth-child(even){
+tbody tr:nth-child(even) {
     background-color: rgb(0, 0, 0, 0.05);
 }
 
-tbody tr:hover{
+tbody tr:hover {
     background-color: rgb(0, 0, 0, 0.08);
 }
 
-.filter_info{
+.filter_info {
     display: none;
 }
 
-@media (max-width: 768px){
-    .table-head{
+@media (max-width: 768px) {
+    .table-head {
         display: none;
     }
-
-    .table-content{
+    .table-content {
         max-height: 81vh;
         border-radius: 6px !important;
         box-shadow: 0px 5px 18px 0px rgb(82 81 81 / 50%);
-    
     }
-
-    td, tr, th{
+    td, tr, th {
         width: 100% !important;
         display: block;
     }
-
-    .table-content tr{
+    .table-content tr {
         padding: 20px 0px;
     }
-
-    .t-column-1, .t-column-2, .t-column-3, .t-column-4{
+    .t-column-1, .t-column-2, .t-column-3, .t-column-4 {
         padding: 0px 15px;
         padding-left: 55% !important;
         margin: 15px 0px;
     }
-
-    .table-content .t-column-1::before{
+    .table-content .t-column-1::before {
         content: "Date :";
         font-weight: 600;
         position: absolute;
         left: 20px;
     }
-
-    .table-content .t-column-2::before{
+    .table-content .t-column-2::before {
         content: "Title :";
         font-weight: 600;
         position: absolute;
         left: 20px;
     }
-
-    .table-content .t-column-3::before{
+    .table-content .t-column-3::before {
         content: "Teacher / Student :";
         font-weight: 600;
         position: absolute;
         left: 20px;
     }
-
-    .table-content .t-column-4::before{
+    .table-content .t-column-4::before {
         content: "Participant count :";
         font-weight: 600;
         position: absolute;
         left: 20px;
+    }
+}
+
+@media (max-width: 280px) {
+    .t-column-1, .t-column-2, .t-column-3, .t-column-4 {
+        padding-left: 60% !important;
     }
 }
 
