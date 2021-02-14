@@ -619,7 +619,7 @@ footer .foot-info .foot-icon:hover .fa {
 
 /* media query */
 
-@media (max-width: 768px) {
+@media (max-width: 992px){
     .nav-bar .wrapper {
         position: fixed;
         height: 100vh;
@@ -693,6 +693,9 @@ footer .foot-info .foot-icon:hover .fa {
         cursor: pointer;
         display: block;
     }
+}
+
+@media (max-width: 768px) {
     footer .foot-info {
         display: block;
         width: 100%;
@@ -706,6 +709,22 @@ footer .foot-info .foot-icon:hover .fa {
         display: flex;
         flex-wrap: wrap;
         justify-content: center !important;
+    }
+}
+
+@media (max-width: 576px){
+    .title-banner h2 {
+        font-size: 30px;
+    }
+
+    .textbox p, .textbox ul li {
+        padding: 0px;
+    }
+}
+
+@media (max-width: 320px){
+    .title-banner h2 {
+        font-size: 26px;
     }
 }
 
