@@ -58,7 +58,7 @@ header{
 }
 
 .align-center{
-    align-items: center;
+    align-items: center !important;
 }
 
 .space-between{
@@ -115,7 +115,6 @@ header{
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
-        margin-bottom: 40px;
     }
 }
 
@@ -159,10 +158,9 @@ header{
     }
 
     .col-lg {
-        -ms-flex: 0 0 75%;
-        flex: 0 0 75%;
-        max-width: 75%;
-        margin: auto;
+        -ms-flex: 0 0 60;
+        flex: 0 0 60%;
+        max-width: 60%;
     }
 }
 
@@ -209,4 +207,12 @@ img {
 
 .mb-50{
     margin-bottom: 50px;
+}
+
+.mr-auto{
+    margin-right: auto;
+}
+
+.p-0{
+    padding: 0px;
 }

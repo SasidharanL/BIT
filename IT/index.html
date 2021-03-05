@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style.min.css">
-    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
 
 </head>
 
@@ -21,7 +21,7 @@
                 <input type="radio" name="slider" id="menu-btn">
                 <div class="wrapper">
                     <input type="radio" name="slider" id="close-btn">
-                    <label for="close-btn" class="mobile close-btn"><i class="fa fa-times"></i></label>
+                    <label for="close-btn" class="mobile close-btn"><i class="fas fa-times"></i></label>
                     <ul class="nav-list">
                         <li class="nav-list-item active"><a href="index.html" class="nav-item">home</a></li>
                         <li class="nav-list-item"><a href="student.html" class="nav-item">students</a></li>
@@ -39,19 +39,25 @@
                         <li class="nav-list-item"><a href="contact.html" class="nav-item">contact</a></li>
                     </ul>
                 </div>
-                <label for="menu-btn" class="mobile menu-btn"><i class="fa fa-bars"></i></label>
+                <label for="menu-btn" class="mobile menu-btn"><i class="fas fa-bars"></i></label>
             </nav>
         </div>
     </header>
 
-    <section class="site-content home-page">
+    <section class="home-banner">
         <div class="container">
-            <div class="title-banner">
+            <div class="title-banner col-lg mr-auto">
                 <h2>Train Your Learning Outcome</h2>
                 <span>(TYLO)</span>
+                <p>We train students and teachers to improve the way they understand and deliver the content.</p>
             </div>
-            <div class="row">
-                <dic class="col-md d-flex align-center">
+        </div>
+    </section>
+
+    <section class="site-content home-page">
+        <div class="container">
+            <div class="row flex-normal">
+                <dic class="col-md">
                     <div class="imgbox">
                         <img src="./images/vision.jfif" alt="I'm possible" width="100%" class="img-fluid">
                     </div>
@@ -67,7 +73,12 @@
                     </div>
                 </dic>
             </div>
-            <div class="row">
+            <div class="row flex-reverse">
+                <div class="col-md">
+                    <div class="imgbox">
+                        <img src="./images/possible.jfif" alt="Our Vision" class="img-fluid">
+                    </div>
+                </div>
                 <div class="col-md">
                     <div class="textbox">
                         <h2>Mission</h2>
@@ -95,11 +106,6 @@
                                 To obtain feedback from students by conducting periodic online formative assessments
                             </li>
                         </ul>
-                    </div>
-                </div>
-                <div class="col-md d-flex align-center">
-                    <div class="imgbox">
-                        <img src="./images/possible.jfif" alt="Our Vision" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -139,15 +145,17 @@
             <div class="row space-between foot-info">
                 <span class="copy-right">All rights reserved | <a href="#">Letsbuildui</a></span>
                 <ul class="d-flex space-between align-center foot-info-link">
-                    <li><a href="#" class="foot-icon"><i class="fa fa-instagram"></i></a></li>
-                    <li><a href="#" class="foot-icon"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#" class="foot-icon"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#" class="foot-icon"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="foot-icon"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="foot-icon"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" class="foot-icon"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#" class="foot-icon"><i class="fab fa-twitter"></i></a></li>
                 </ul>
             </div>
         </div>
     </footer>
 
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
