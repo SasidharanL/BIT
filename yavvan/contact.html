@@ -8,6 +8,7 @@
     <title>Yavvan | Contact</title>
 
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/icon.css">
     <link rel="stylesheet" href="./assets/css/all.min.css">
 </head>
@@ -16,121 +17,129 @@
 
     <div class="site-wrapper">
         <header class="site-header">
-            <div class="header-inner">
-                <a href="#" class="site-logo">Yavvan</a>
+            <div class="container">
+                <div class="row">
+                    <a href="./index.html" class="site-logo">Yavvan</a>
 
-                <div class="site-search">
-                    <form class="search-bar">
-                        <label for="search-input" class="search-icon"><i class="fas fa-search"></i></label>
-                        <input type="search" name="search" id="search-input" placeholder="Search products.."
-                            class="search-input" autocomplete="off" name="search">
-                        <button type="submit" class="search-btn">Search</button>
-                    </form>
-                    <div class="search-result"></div>
-                </div>
+                    <div class="site-search">
+                        <form class="search-bar">
+                            <label for="search-input" class="search-icon"><i class="fas icon fa-search"></i></label>
+                            <input type="search" name="search" id="search-input" placeholder="Search products.."
+                                class="search-input" autocomplete="off" name="search">
+                            <button type="submit" class="search-btn">Search</button>
+                        </form>
+                        <div class="search-result"></div>
+                    </div>
 
-                <div class="header-icon-group">
-                    <div class="header-icon-group-inner">
-                        <div class="header-icon-item account">
-                            <a href="#"><i class="far fa-user"></i></a>
-                            <div class="account-drop">
-                                <div class="account-inner">
-                                    <div class="account-drop-title">
-                                        <span>Sign in | </span>
-                                        <span><a href="#">Create an account</a></span>
-                                    </div>
-                                    <form class="sign-in-form">
-                                        <input type="text" name="uname" id="user_name" placeholder="Username" required>
-                                        <input type="password" name="upass" id="user_password" placeholder="Password"
-                                            required>
-                                        <button type="submit">Sign in</button>
-                                    </form>
-                                    <div class="account-helper">
-                                        <span><a href="#">Forgot Password?</a></span>
+                    <div class="header-icon-group">
+                        <div class="header-icon-group-inner">
+                            <div class="header-icon-item account">
+                                <a href="#"><i class="far fa-user"></i></a>
+                                <div class="account-drop">
+                                    <div class="account-inner">
+                                        <div class="account-drop-title">
+                                            <span>Sign in | </span>
+                                            <span><a href="#">Create an account</a></span>
+                                        </div>
+                                        <form class="sign-in-form">
+                                            <input type="text" name="uname" id="user_name" placeholder="Username"
+                                                required>
+                                            <input type="password" name="upass" id="user_password"
+                                                placeholder="Password" required>
+                                            <button type="submit">Sign in</button>
+                                        </form>
+                                        <div class="account-helper">
+                                            <span><a href="#">Forgot Password?</a></span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="header-icon-item wishlist">
-                            <a href="#">
-                                <i class="far fa-heart"></i>
-                                <span class="wish-count">0</span>
-                            </a>
-                        </div>
-                        <div class="header-icon-item cart">
-                            <a href="#">
-                                <i class="fas fa-shopping-cart"></i>
-                                <span class="cart-count">0</span>
-                            </a>
+                            <div class="header-icon-item wishlist">
+                                <a href="#">
+                                    <i class="far fa-heart"></i>
+                                    <span class="wish-count">0</span>
+                                </a>
+                            </div>
+                            <div class="header-icon-item cart">
+                                <a href="#">
+                                    <i class="fas icon fa-shopping-cart"></i>
+                                    <span class="cart-count">0</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
+                    <button class="menu"><i class="fas icon fa-bars"></i></button>
                 </div>
             </div>
+
             <nav class="nav-bar">
-                <div class="nav-bar-inner">
-                    <div class="shopper-box">
-                        <span class="shopper"><i class="fas fa-bars"></i>Categories</span>
-                        <div class="shopper-drop">
-                            <ul class="drop-list">
-                                <li class="drop-item">
-                                    <a href="#" class="drop-link"><i class="icon-grain"></i><span>Pulses</span></a>
-                                </li>
-                                <li class="drop-item"><a href="#" class="drop-link"><i
-                                            class="icon-spices"></i><span>Spices</span></a></li>
-                                <li class="drop-item"><a href="#" class="drop-link"><i
-                                            class="icon-sugar"></i><span>Sweetners</span></a></li>
-                                <li class="drop-item"><a href="#" class="drop-link"><i
-                                            class="icon-oil"></i><span>Oils</span></a></li>
-                            </ul>
+                <div class="container">
+                    <div class="row">
+                        <div class="shopper-box">
+                            <span class="shopper"><i class="fas icon fa-bars"></i>Categories</span>
+                            <div class="shopper-drop">
+                                <ul class="drop-list">
+                                    <li class="drop-item">
+                                        <a href="#" class="drop-link"><i class="icon-grain"></i><span>Pulses</span></a>
+                                    </li>
+                                    <li class="drop-item"><a href="#" class="drop-link"><i
+                                                class="icon-spices"></i><span>Spices</span></a></li>
+                                    <li class="drop-item"><a href="#" class="drop-link"><i
+                                                class="icon-sugar"></i><span>Sweetners</span></a>
+                                    </li>
+                                    <li class="drop-item"><a href="#" class="drop-link"><i
+                                                class="icon-oil"></i><span>Oils</span></a></li>
+                                </ul>
+                            </div>
                         </div>
+                        <ul class="nav-list">
+                            <li class="nav-items"><a href="./index.html" class="nav-link">Home</a></li>
+                            <li class="nav-items dropper">
+                                <a href="#" class="nav-link">Shop <i class="fas icon fa-angle-down"></i></a>
+                                <ul class="nav-drop-list">
+                                    <li class="nav-drop-item"><a href="#" class="nav-drop-link">Link 1</a></li>
+                                    <li class="nav-drop-item"><a href="#" class="nav-drop-link">Link 2</a></li>
+                                    <li class="nav-drop-item"><a href="#" class="nav-drop-link">Link 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-items"><a href="#" class="nav-link">About us</a></li>
+                            <li class="nav-items dropper">
+                                <a href="#" class="nav-link">Blog <i class="fas icon fa-angle-down"></i></a>
+                                <ul class="nav-drop-list">
+                                    <li class="nav-drop-item"><a href="#" class="nav-drop-link">Link 1</a></li>
+                                    <li class="nav-drop-item"><a href="#" class="nav-drop-link">Link 2</a></li>
+                                    <li class="nav-drop-item"><a href="#" class="nav-drop-link">Link 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-items active"><a href="#" class="nav-link">Contact</a></li>
+                        </ul>
                     </div>
-                    <ul class="nav-list">
-                        <li class="nav-items"><a href="#" class="nav-link">Home</a></li>
-                        <li class="nav-items">
-                            <a href="#" class="nav-link">Shop <i class="fas fa-angle-down"></i></a>
-                            <ul class="nav-drop-list">
-                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Link 1</a></li>
-                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Link 2</a></li>
-                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Link 3</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-items"><a href="#" class="nav-link">About us</a></li>
-                        <li class="nav-items">
-                            <a href="#" class="nav-link">Blog <i class="fas fa-angle-down"></i></a>
-                            <ul class="nav-drop-list">
-                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Link 1</a></li>
-                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Link 2</a></li>
-                                <li class="nav-drop-item"><a href="#" class="nav-drop-link">Link 3</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-items active"><a href="#" class="nav-link">Contact</a></li>
-                    </ul>
                 </div>
             </nav>
         </header>
 
-        <div class="site-body">
+        <section class="site-body">
             <div class="page-info-banner">
-                <div class="info-banner-content">
+                <div class="info-banner-content container">
                     <h3>Contact us</h3>
                     <nav class="info-nav">
                         <span><a href="#">Home</a></span>
-                        <span><i class="fas fa-angle-right"></i></span>
+                        <span><i class="fas icon fa-angle-right"></i></span>
                         <span><a href="./contact.html">Contact us</a></span>
                     </nav>
                 </div>
             </div>
-            <div class="site-body-inner">
-                <div class="row">
-                    <div class="column-md">
-                        <div class="img-box">
-                            <img src="./assets/images/spices.jpg" alt="">
+            <div class="container msg-form">
+                <div class="row form-wrapper">
+                    <div class="col-md">
+                        <div class="img-box contact-form-img">
+                            <img src="./assets/images/spices.png" alt="">
                         </div>
                     </div>
-                    <div class="column-md">
+                    <div class="col-md">
                         <div class="contact-area">
                             <div class="contact-text">
-                                <h2 class="title">We love to hear from you</h2>
+                                <h2 class="title capital">We love to hear from you</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium accusamus,
                                     nesciunt, quia non nobis debitis odit quae error at eum tempora harum sapiente porro
@@ -145,7 +154,8 @@
                                 <input type="email" placeholder="Email" />
                                 <input type="text" placeholder="Subject" />
                                 <div class="text-area-tag">
-                                    <textarea name="text-area" id="text-area" cols="30" rows="10" placeholder="Your message"></textarea>
+                                    <textarea name="text-area" id="text-area" cols="30" rows="10"
+                                        placeholder="Your message"></textarea>
                                 </div>
                                 <button type="submit" class="submit-btn">Submit</button>
                             </form>
@@ -153,12 +163,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <footer class="site-footer">
-            <div class="footer-inner">
+            <div class="container">
                 <div class="row">
-                    <div class="column-sm">
+                    <div class="col-sm">
                         <div class="call-us">
                             <i class="icon-headphones"></i>
                             <div class="call-num">
@@ -167,7 +177,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column-md">
+                    <div class="col-md">
                         <div class="follow-us">
                             <span>follow us</span>
                             <ul class="icon-group">
@@ -178,59 +188,54 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="column-md">
-
-                    </div>
                 </div>
                 <div class="row">
-                    <div class="footer-nav-bar">
-                        <div class="column-sm">
-                            <span class="footer-menu-title">
-                                store location
-                            </span>
-                            <ul class="footer-nav-list">
-                                <li class="footer-nav-item">12, Erode</li>
-                                <li class="footer-nav-item">Tamil Nadu, India</li>
-                            </ul>
-                            <h3 class="email"><a href="#">example@gmail.com</a></h3>
-                        </div>
-                        <div class="column-sm">
-                            <span class="footer-menu-title">
-                                Quick links
-                            </span>
-                            <ul class="footer-nav-list">
-                                <li class="footer-nav-item"><a href="#">About Us</a></li>
-                                <li class="footer-nav-item"><a href="#">Cart</a></li>
-                                <li class="footer-nav-item"><a href="#">Blog</a></li>
-                                <li class="footer-nav-item"><a href="#">Contact</a></li>
-                            </ul>
-                        </div>
-                        <div class="column-sm">
-                            <span class="footer-menu-title">
-                                my account
-                            </span>
-                            <ul class="footer-nav-list">
-                                <li class="footer-nav-item"><a href="#">My account</a></li>
-                                <li class="footer-nav-item"><a href="#">Cart</a></li>
-                                <li class="footer-nav-item"><a href="#">Contact</a></li>
-                                <li class="footer-nav-item"><a href="#">Shop</a></li>
-                            </ul>
-                        </div>
-                        <div class="column-sm">
-                            <span class="footer-menu-title">
-                                Categories
-                            </span>
-                            <ul class="footer-nav-list">
-                                <li class="footer-nav-item"><a href="#"><i
-                                            class="icon-grain"></i><span>Pulses</span></a></li>
-                                <li class="footer-nav-item"><a href="#"><i
-                                            class="icon-spices"></i><span>Spices</span></a></li>
-                                <li class="footer-nav-item"><a href="#"><i
-                                            class="icon-sugar"></i><span>Sweetners</span></a></li>
-                                <li class="footer-nav-item"><a href="#"><i class="icon-oil"></i><span>Oils</span></a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="col-sm">
+                        <span class="footer-menu-title">
+                            store location
+                        </span>
+                        <ul class="footer-nav-list">
+                            <li class="footer-nav-item">12, Erode</li>
+                            <li class="footer-nav-item">Tamil Nadu, India</li>
+                        </ul>
+                        <h3 class="email"><a href="#">example@gmail.com</a></h3>
+                    </div>
+                    <div class="col-sm">
+                        <span class="footer-menu-title">
+                            Quick links
+                        </span>
+                        <ul class="footer-nav-list">
+                            <li class="footer-nav-item"><a href="#">About Us</a></li>
+                            <li class="footer-nav-item"><a href="#">Cart</a></li>
+                            <li class="footer-nav-item"><a href="#">Blog</a></li>
+                            <li class="footer-nav-item"><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <span class="footer-menu-title">
+                            my account
+                        </span>
+                        <ul class="footer-nav-list">
+                            <li class="footer-nav-item"><a href="#">My account</a></li>
+                            <li class="footer-nav-item"><a href="#">Cart</a></li>
+                            <li class="footer-nav-item"><a href="#">Contact</a></li>
+                            <li class="footer-nav-item"><a href="#">Shop</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <span class="footer-menu-title">
+                            Categories
+                        </span>
+                        <ul class="footer-nav-list">
+                            <li class="footer-nav-item"><a href="#"><i class="icon-grain"></i><span>Pulses</span></a>
+                            </li>
+                            <li class="footer-nav-item"><a href="#"><i class="icon-spices"></i><span>Spices</span></a>
+                            </li>
+                            <li class="footer-nav-item"><a href="#"><i class="icon-sugar"></i><span>Sweetners</span></a>
+                            </li>
+                            <li class="footer-nav-item"><a href="#"><i class="icon-oil"></i><span>Oils</span></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="row">
@@ -240,6 +245,10 @@
                 </div>
             </div>
         </footer>
+    </div>
+
+    <div class="back-to-top">
+        <i class="fas icon fa-angle-up"></i>
     </div>
 
     <script src="./assets/js/script.js"></script>
