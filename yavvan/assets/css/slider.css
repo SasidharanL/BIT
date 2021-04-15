@@ -1,0 +1,147 @@
+.items {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow: hidden;
+}
+
+.items .item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0;
+    transform: translate(100%, -50%);
+    transition: all 800ms ease-in-out;
+}
+
+.item img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.item.active {
+    opacity: 1;
+    z-index: 99;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.05);
+}
+
+.item.prev {
+    opacity: 0;
+    transform: translate(-110%, -50%);
+}
+
+.item.next {
+    opacity: 0;
+    transform: translate(10%, -50%);
+}
+
+.item .content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .slider-text {
+    text-align: center;
+    padding: 30px 20px;
+    color: #ffffff;
+}
+
+.slider-text p {
+    opacity: 0;
+    font-size: 18px;
+    transition: all 600ms ease;
+    transition-delay: 700ms;
+    transform: translateY(100px);
+}
+
+.slider-text .slider-title {
+    opacity: 0;
+    width: 100%;
+    display: block;
+    font-size: 42px;
+    margin: 30px 0px;
+    transition: all 600ms ease;
+    transition-delay: 900ms;
+    transform: translateY(100px);
+}
+
+.slider-text .slider-btn {
+    opacity: 0;
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 600ms ease;
+    transition-delay: 1100ms;
+    transform: translateY(100px);
+    background-color: rgb(33, 88, 26);
+}
+
+.item.active .content .slider-text .slider-title,
+.item.active .content .slider-text p,
+.item.active .content .slider-text .slider-btn {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.items .button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 100;
+}
+
+.button-container .button {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.75;
+    transition: all 300ms ease-in-out;
+}
+
+.button-container .button:hover {
+    opacity: 1;
+}
+
+.button-container .button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    z-index: -99;
+}
+
+.button-container .button:nth-child(1) {
+    float: left;
+    left: 40px;
+}
+
+.button-container .button:nth-child(2) {
+    float: right;
+    right: 40px;
+}
