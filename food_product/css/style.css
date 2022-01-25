@@ -74,14 +74,16 @@ html, body {
 /* header */
 .header {
     width: 100%;
-    height: 100px;
+    height: 80px;
     display: flex;
-    padding: 18px 15px;
+    padding: 0px 15px;
+    align-items: center;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .content {
     width: 90%;
+    height: 100%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -101,6 +103,7 @@ html, body {
 
 /* navigation */
 .nav-bar, .nav-list {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,19 +115,23 @@ html, body {
 
 .nav-item {
     height: 100%;
+    display: flex;
+    cursor: pointer;
     margin: 0px 10px;
-    padding: 15px 20px 15px;
+    padding: 0px 15px;
+    align-items: center;
 }
 
 .nav-link {
     cursor: pointer;
     color: #000000;
+    display: block;
     font-size: 13px;
     font-weight: 600;
     padding: 10px 0px;
-    display: block;
     position: relative;
     letter-spacing: 1px;
+    align-items: center;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -146,6 +153,10 @@ html, body {
     transform: scale(1, 1);
 }
 
+.nav-item:last-child:hover .nav-link::after, .nav-item:last-child.active .nav-link::after{
+    transform: scale(0);
+}
+
 .menu-open-toggler, .menu-close-toggler {
     display: none;
 }
@@ -159,10 +170,11 @@ html, body {
 
 /* drop-down */
 .drop-down {
+    opacity: 0;
     z-index: 999;
     width: 90vw;
+    cursor: auto;
     display: flex;
-    opacity: 0;
     visibility: hidden;
     padding: 30px 20px;
     position: absolute;
@@ -236,6 +248,16 @@ html, body {
     transform: translateX(6px);
 }
 
+.cart-num{
+    position: relative;
+}
+
+.cart-num span{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+}
+
 /* responsive navigation */
 @media (min-width: 992px) {
     .mobile-view {
@@ -250,7 +272,7 @@ html, body {
         position: fixed;
         top: 0px;
         left: 0px;
-        z-index: 1000;
+        z-index: 10000;
         width: 280px;
         height: 100vh;
         padding: 80px 20px;
@@ -270,6 +292,8 @@ html, body {
 
     .nav-item {
         margin: 0px;
+        height: auto;
+        display: block;
         padding: 10px 0px;
     }
 
@@ -297,7 +321,7 @@ html, body {
 
     .menu-close-toggler {
         position: absolute;
-        top: 30px;
+        top: 20px;
         right: 30px;
     }
 
@@ -354,7 +378,7 @@ section {
 .head-banner {
     width: 100%;
     padding: 0px 0px;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
 }
 
 /* product-banner */
@@ -586,3 +610,63 @@ section {
         justify-content: center;
     }
 }
+
+.cart-banner{
+    position: relative;
+}
+
+.cart-holder{
+    width: 100%;
+    min-height: 300px;
+}
+
+.cart-holder .cart-info{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cart-info .cart-quantity{
+    margin-right: 80px;
+}
+
+.cart-items .product{
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hide{
+    display: none;
+}
+
+.icon{
+    margin: 0px 10px;
+}
+
+.deleteItem{
+    cursor: pointer;
+}
+
+.img-box{
+    max-width: 200px;
+}
+
+.img-fluid{
+    max-width: 100%;
+}
+
+ion-icon{
+    vertical-align: bottom;
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
