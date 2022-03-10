@@ -4,12 +4,6 @@
   scroll-behavior: smooth;
 }
 
-.schedule-frame {
-  overflow: scroll;
-  min-height: 100vh;
-  width: 100%;
-}
-
 .list {
   list-style: none;
   margin: 0px;
