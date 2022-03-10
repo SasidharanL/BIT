@@ -1,7 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Heebo:300,400,500,700|Roboto:300,400,500,700");
 
-*{
+* {
   scroll-behavior: smooth;
+}
+
+.schedule-frame {
+  overflow: scroll;
+  min-height: 100vh;
+  width: 100%;
 }
 
 .list {
@@ -17,7 +23,8 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
   outline: none;
 }
@@ -34,7 +41,12 @@ body {
   color: #777777;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Heebo", sans-serif;
   font-weight: bold;
 }
@@ -45,7 +57,7 @@ button:focus {
   box-shadow: none;
 }
 
-.fa{
+.fa {
   color: #9b9999;
 }
 
@@ -63,7 +75,7 @@ button:focus {
   padding-top: 120px;
 }
 
-.m_120{
+.m_120 {
   margin: 120px 0px 120px 0px !important;
 }
 
@@ -75,7 +87,7 @@ button:focus {
   margin-top: 25px !important;
 }
 
-.mar_top{
+.mar_top {
   margin-top: 120px !important;
 }
 
@@ -84,11 +96,11 @@ button:focus {
   padding-right: 0px;
 }
 
-.p10{
+.p10 {
   padding: 10px;
 }
 
-.p20{
+.p20 {
   padding: 20px !important;
 }
 
@@ -100,52 +112,52 @@ button:focus {
   margin-bottom: 30px;
 }
 
-.m0{
+.m0 {
   margin: 0;
 }
 
-.text-justify{
+.text-justify {
   text-align: justify;
 }
 
-.text-fluid{
+.text-fluid {
   font-weight: 400;
   line-height: normal !important;
   font-family: 'Roboto', sans-serif;
 }
 
-.font-18{
+.font-18 {
   font-size: 18px !important;
 }
 
-.font-17{
+.font-17 {
   font-size: 17px !important;
 }
 
-.h-210{
+.h-210 {
   height: 210px !important;
 }
 
-.bold{
+.bold {
   font-weight: 800 !important;
 }
 
-.disappear{
+.disappear {
   display: none;
 }
 
-.txt{
+.txt {
   position: relative;
   color: rgb(36, 35, 35);
 }
 
-.info-txt{
-    font-size: 1.75rem !important;
-    font-weight: 700 !important;
-    margin-bottom: 0 !important;
+.info-txt {
+  font-size: 1.75rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 0 !important;
 }
 
-.txt:before{
+.txt:before {
   content: '';
   position: absolute;
   width: 60px;
@@ -154,40 +166,40 @@ button:focus {
   bottom: 1px;
 }
 
-.col-white{
+.col-white {
   color: #fff !important;
   margin-bottom: 50px !important;
   font-weight: 400 !important;
 }
 
-.bor_rad{
+.bor_rad {
   padding: 8px 50px 8px 50px;
   border: 2px solid #fff;
   border-radius: 40px;
 }
 
-.r-50{
+.r-50 {
   border-radius: 50% !important;
 }
 
-.rad-10{
+.rad-10 {
   border-radius: 10px;
 }
 
-.bg-img{
+.bg-img {
   color: #fff !important;
-  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), 
-              url(../img/bg-img.jpg) no-repeat scroll center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/bg-img.jpg) no-repeat scroll center center;
   background-size: cover;
   background-attachment: fixed;
 }
 
-.bg{
+.bg {
   color: rgb(48, 47, 47);
   transition: all 0.25s ease-in-out;
 }
 
-.bg:hover{
+.bg:hover {
   background: -webkit-gradient(linear, left top, right top, from(#2c28b1), color-stop(70%, #9b5cf6));
   background: -webkit-linear-gradient(left, #2c28b1 0%, #9b5cf6 70%);
   background: -o-linear-gradient(left, #2c28b1 0%, #9b5cf6 70%);
@@ -197,19 +209,19 @@ button:focus {
   -webkit-text-fill-color: transparent;
 }
 
-.hero_txt{
+.hero_txt {
   font-size: 20px;
   font-weight: 600 !important;
   color: #000 !important;
   text-transform: uppercase !important;
 }
 
-.register{
+.register {
   padding: 50px 0px;
   overflow: hidden;
 }
 
-.btn_click{
+.btn_click {
   font-size: 16px;
   margin-left: 50px;
   padding: 10px 35px 10px 35px;
@@ -223,30 +235,30 @@ button:focus {
   transition: 0.25s ease-in-out;
 }
 
-.btn_click:hover{
+.btn_click:hover {
   color: #fff;
   background-color: #000;
   border-color: #000;
   box-shadow: none;
 }
 
-.hero{
+.hero {
   font-size: 20px;
   font-weight: 600;
   color: rgb(58, 58, 58);
 }
 
-.box-shad{
+.box-shad {
   -webkit-box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.2);
   box-shadow: 0px 10px 30px 0px rgba(98, 71, 234, 0.2);
 }
 
-.size-100{
+.size-100 {
   height: 100px;
   width: 100px;
 }
 
-.highlight{
+.highlight {
   color: #0e31f7 !important;
   font-weight: 600 !important;
 }
@@ -330,7 +342,7 @@ button:focus {
   margin-right: 45px;
 }
 
-.header_area .navbar .logo_h span{
+.header_area .navbar .logo_h span {
   color: #fff;
   font-size: 26px;
   font-weight: 600;
@@ -343,11 +355,11 @@ button:focus {
   display: inline-block;
 }
 
-.header_area .navbar .nav .nav-item .nav-link:hover{
+.header_area .navbar .nav .nav-item .nav-link:hover {
   color: rgb(4, 164, 238);
 }
 
-.header_area .navbar .nav .nav-item.active .nav-link{
+.header_area .navbar .nav .nav-item.active .nav-link {
   color: rgb(4, 164, 238);
 }
 
@@ -814,7 +826,7 @@ button:focus {
   font-weight: 500;
 }
 
-.causes_item .causes_bottom a + a {
+.causes_item .causes_bottom a+a {
   border-color: #eeeeee;
   background: #fff;
   font-size: 14px;
@@ -885,7 +897,7 @@ button:focus {
   background: #6247ea;
 }
 
-.tags .tag_btn + .tag_btn {
+.tags .tag_btn+.tag_btn {
   margin-left: 2px;
 }
 
@@ -1139,7 +1151,7 @@ button:focus {
   transition: all 0.2s linear;
 }
 
-.blog_right_sidebar .author_widget .social_icon a + a {
+.blog_right_sidebar .author_widget .social_icon a+a {
   margin-left: 20px;
 }
 
@@ -1176,7 +1188,7 @@ button:focus {
   margin-bottom: 0px;
 }
 
-.blog_right_sidebar .popular_post_widget .post_item + .post_item {
+.blog_right_sidebar .popular_post_widget .post_item+.post_item {
   margin-top: 20px;
 }
 
@@ -1198,7 +1210,7 @@ button:focus {
   margin-bottom: 0px;
 }
 
-.blog_right_sidebar .post_category_widget .cat-list li + li {
+.blog_right_sidebar .post_category_widget .cat-list li+li {
   padding-top: 15px;
 }
 
@@ -1554,9 +1566,11 @@ button:focus {
   .comments-area .comment-list .single-comment h5 {
     font-size: 12px;
   }
+
   .comments-area .comment-list .single-comment .date {
     font-size: 11px;
   }
+
   .comments-area .comment-list .single-comment .comment {
     font-size: 10px;
   }
@@ -2338,7 +2352,11 @@ button:focus {
   }
 }
 
-b, sup, sub, u, del {
+b,
+sup,
+sub,
+u,
+del {
   color: #f8b600;
 }
 
@@ -2366,7 +2384,12 @@ h6 {
   font-size: 14px;
 }
 
-.typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
+.typography h1,
+.typography h2,
+.typography h3,
+.typography h4,
+.typography h5,
+.typography h6 {
   color: #777777;
 }
 
@@ -2663,7 +2686,10 @@ h6 {
   display: flex;
 }
 
-.progress-table .table-head .serial, .progress-table .table-head .country, .progress-table .table-head .visit, .progress-table .table-head .percentage {
+.progress-table .table-head .serial,
+.progress-table .table-head .country,
+.progress-table .table-head .visit,
+.progress-table .table-head .percentage {
   color: #222222;
   line-height: 40px;
   text-transform: uppercase;
@@ -2678,7 +2704,10 @@ h6 {
   display: flex;
 }
 
-.progress-table .table-row .serial, .progress-table .table-row .country, .progress-table .table-row .visit, .progress-table .table-row .percentage {
+.progress-table .table-row .serial,
+.progress-table .table-row .country,
+.progress-table .table-row .visit,
+.progress-table .table-row .percentage {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2931,7 +2960,7 @@ h6 {
   cursor: pointer;
 }
 
-.default-switch input + label {
+.default-switch input+label {
   position: absolute;
   top: 1px;
   left: 1px;
@@ -2948,7 +2977,7 @@ h6 {
   cursor: pointer;
 }
 
-.default-switch input:checked + label {
+.default-switch input:checked+label {
   left: 19px;
 }
 
@@ -2976,7 +3005,7 @@ h6 {
   opacity: 0;
 }
 
-.primary-switch input + label {
+.primary-switch input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -2986,7 +3015,7 @@ h6 {
   height: 100%;
 }
 
-.primary-switch input + label:before {
+.primary-switch input+label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -3004,7 +3033,7 @@ h6 {
   transition: all 0.2s;
 }
 
-.primary-switch input + label:after {
+.primary-switch input+label:after {
   content: "";
   position: absolute;
   top: 1px;
@@ -3022,11 +3051,11 @@ h6 {
   cursor: pointer;
 }
 
-.primary-switch input:checked + label:after {
+.primary-switch input:checked+label:after {
   left: 19px;
 }
 
-.primary-switch input:checked + label:before {
+.primary-switch input:checked+label:before {
   background: #f8b600;
 }
 
@@ -3050,7 +3079,7 @@ h6 {
   opacity: 0;
 }
 
-.confirm-switch input + label {
+.confirm-switch input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -3060,7 +3089,7 @@ h6 {
   height: 100%;
 }
 
-.confirm-switch input + label:before {
+.confirm-switch input+label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -3078,7 +3107,7 @@ h6 {
   cursor: pointer;
 }
 
-.confirm-switch input + label:after {
+.confirm-switch input+label:after {
   content: "";
   position: absolute;
   top: 1px;
@@ -3096,11 +3125,11 @@ h6 {
   cursor: pointer;
 }
 
-.confirm-switch input:checked + label:after {
+.confirm-switch input:checked+label:after {
   left: 19px;
 }
 
-.confirm-switch input:checked + label:before {
+.confirm-switch input:checked+label:before {
   background: #4cd3e3;
 }
 
@@ -3124,7 +3153,7 @@ h6 {
   opacity: 0;
 }
 
-.primary-checkbox input + label {
+.primary-checkbox input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -3141,7 +3170,7 @@ h6 {
   color: #222222;
 }
 
-.primary-checkbox input:checked + label {
+.primary-checkbox input:checked+label {
   background: url(../img/elements/primary-check.png) no-repeat center center/cover;
   border: none;
 }
@@ -3166,7 +3195,7 @@ h6 {
   opacity: 0;
 }
 
-.confirm-checkbox input + label {
+.confirm-checkbox input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -3179,7 +3208,7 @@ h6 {
   border: 1px solid #f1f1f1;
 }
 
-.confirm-checkbox input:checked + label {
+.confirm-checkbox input:checked+label {
   background: url(../img/elements/success-check.png) no-repeat center center/cover;
   border: none;
 }
@@ -3204,7 +3233,7 @@ h6 {
   opacity: 0;
 }
 
-.disabled-checkbox input + label {
+.disabled-checkbox input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -3222,7 +3251,7 @@ h6 {
   z-index: 3;
 }
 
-.disabled-checkbox input:checked + label {
+.disabled-checkbox input:checked+label {
   background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
   border: none;
 }
@@ -3247,7 +3276,7 @@ h6 {
   opacity: 0;
 }
 
-.primary-radio input + label {
+.primary-radio input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -3260,7 +3289,7 @@ h6 {
   border: 1px solid #f1f1f1;
 }
 
-.primary-radio input:checked + label {
+.primary-radio input:checked+label {
   background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
   border: none;
 }
@@ -3285,7 +3314,7 @@ h6 {
   opacity: 0;
 }
 
-.confirm-radio input + label {
+.confirm-radio input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -3298,7 +3327,7 @@ h6 {
   border: 1px solid #f1f1f1;
 }
 
-.confirm-radio input:checked + label {
+.confirm-radio input:checked+label {
   background: url(../img/elements/success-radio.png) no-repeat center center/cover;
   border: none;
 }
@@ -3323,7 +3352,7 @@ h6 {
   opacity: 0;
 }
 
-.disabled-radio input + label {
+.disabled-radio input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -3352,7 +3381,7 @@ h6 {
   padding: 0px;
 }
 
-.disabled-radio input:checked + label {
+.disabled-radio input:checked+label {
   background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
   border: none;
 }
@@ -3809,7 +3838,8 @@ h6 {
   text-transform: uppercase;
 }
 
-.event_schedule_inner .nav-tabs li a.active, .event_schedule_inner .nav-tabs li a:hover {
+.event_schedule_inner .nav-tabs li a.active,
+.event_schedule_inner .nav-tabs li a:hover {
   background: #6644ff;
   border: none;
   color: #fff;
@@ -3888,24 +3918,24 @@ h6 {
 /*----------------------------------------------------*/
 /* Team Area css
 ============================================================================================ */
-.p-10{
+.p-10 {
   padding: 10px;
   margin: 0;
 }
 
-.mt-90{
+.mt-90 {
   margin-top: 90px;
 }
 
-.h-300{
+.h-300 {
   height: 300px;
 }
 
-.mb-50{
+.mb-50 {
   margin-bottom: 50px;
 }
 
-.mt-50{
+.mt-50 {
   margin-top: 50px;
 }
 
@@ -3951,7 +3981,7 @@ h6 {
   margin-right: 0px;
 }
 
-.team_item .team_img .hover a i.fa{
+.team_item .team_img .hover a i.fa {
   font-size: 20px;
   padding: 10px;
 }
@@ -4137,7 +4167,7 @@ h6 {
   margin-bottom: 0px;
 }
 
-.single-footer-widget .quick-link li:hover a{
+.single-footer-widget .quick-link li:hover a {
   color: rgb(111, 171, 250);
 }
 
@@ -4236,7 +4266,7 @@ h6 {
   margin-bottom: 10px;
 }
 
-.contact_wd a + a {
+.contact_wd a+a {
   margin-bottom: 0px;
 }
 
