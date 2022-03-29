@@ -1,276 +1,225 @@
-﻿<!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--
-Design By Rahul kishan.M
--->
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>NCIIT - 2016</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <link href="style.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
-  <script src="js/jquery.min.js" type="text/javascript"></script>
-  <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
-  <!-- CuFon: Enables smooth pretty custom font rendering. 100% SEO friendly. To disable, remove this section -->
-  <script type="text/javascript" src="js/cufon-yui.js"></script>
-  <script type="text/javascript" src="js/arial.js"></script>
-  <script type="text/javascript" src="js/cuf_run.js"></script>
-  <!-- CuFon ends -->
-  <script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
-  <SCRIPT>
-    expireDate = new Date
-    expireDate.setMonth(expireDate.getMonth() + 6)
-    jcount = eval(cookieVal("jaafarCounter"))
-    jcount++
-    document.cookie = "jaafarCounter=" + jcount + ";expires=" + expireDate.toGMTString()
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    function cookieVal(cookieName) {
-      thisCookie = document.cookie.split("; ")
-      for (i = 0; i < thisCookie.length; i++) {
-        if (cookieName == thisCookie[i].split("=")[0]) {
-          return thisCookie[i].split("=")[1]
-        }
-      }
-      return 0
-    }
+	<title>NCIIT | Details</title>
+	<link rel="icon" href="./images/icon.png" type="image/x-icon">
 
-    function page_counter() {
-      for (i = 0; i < (7 - jcount.toString().length); i++)
-        document.write('<span class="counter">0</span>')
-      for (y = 0; y < (jcount.toString().length); y++)
-        document.write('<span class="counter">' + jcount.toString().charAt(y) + '</span>')
-    }
-  </SCRIPT>
-  <script type="text/javascript">
-    $(window).load(function () {
-      $('#slider').nivoSlider({
-        effect: 'random',
-        slices: 15,
-        animSpeed: 500,
-        pauseTime: 3000,
-        startSlide: 0, //Set starting Slide (0 index)
-        directionNav: false,
-        directionNavHide: false, //Only show on hover
-        controlNav: false, //1,2,3...
-        controlNavThumbs: false, //Use thumbnails for Control Nav
-        pauseOnHover: true, //Stop animation while hovering
-        manualAdvance: false, //Force manual transitions
-        captionOpacity: 0.8, //Universal caption opacity
-        beforeChange: function () { },
-        afterChange: function () { },
-        slideshowEnd: function () { } //Triggers after all slides have been shown
-      });
-    });
-  </script>
-
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/all.min.css">
 </head>
 
 <body>
-  <div class="main">
-    <div class="header">
-      <div class="header_resize">
-        <div class="logo">
-          <h1><a href="index.html">NCIIT <span>2016</span><small>Dept of CSE @ BIT</small></a></h1>
-        </div>
-        <div class="menu_nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="active"><a href="about.html">About</a></li>
-            <li><a href="paper.html">Topics</a></li>
-            <li><a href="paperdetail.html">Paper Details</a></li>
-            <li><a href="commit.html">Committee</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="clr"></div>
-      </div>
-    </div>
-    <div class="content">
-      <div class="content_resize">
+	<section class="site-wrapper">
+		<header>
+			<div class="container">
+				<a href="./index.html" class="logo">NCIIT</a>
+				<nav>
+					<span class="menu-btn"><i class="fa-solid fa-bars"></i></span>
+					<ul class="nav-list">
+						<li class="list-item"><a href="./index.html" class="nav-link">home</a></li>
+						<li class="list-item active"><a href="./about.html" class="nav-link">about</a></li>
+						<li class="list-item"><a href="./committee.html" class="nav-link">committee</a></li>
+						<li class="list-item"><a href="./guideline.html" class="nav-link">guideline</a></li>
+						<li class="list-item"><a href="./contact.html" class="nav-link">contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section class="site-body">
+			<section class="page-info-banner">
+				<div class="container">
+					<div class="page-info">
+						<span><a href="./index.html">NCIIT</a> <i class="fa-solid fa-angles-right"></i></span>
+						<h2><a href="./about.html">About</a></h2>
+					</div>
+				</div>
+			</section>
+			<section class="welcome-banner">
+				<div class="container">
+					<div class="title-block row">
+						<div class="col-md">
+							<div class="img-box">
+								<img src="./images/welcome.jpg" alt="welcome" class="img-fluid"
+									style="max-height: 350px;">
+							</div>
+						</div>
+						<div class="col-md">
+							<h2>Welcome to NCIIT</h2>
+							<p>
+								<span>
+									The Computer Science and
+									Telecommunications have been used to occur
+									innovations in IT. The most promising research
+									directions and impacts such innovation might have
+									on society. Consistent themes emerge from this
+									conference. The aim of this conference is to provide
+									an opportunity for experts from Academic Institutions
+									and Industries to discuss and share their experiences,
+									strategy and vision on the research activities in the
+									field of Information Technology. Eminent Scientists
+									and Engineers will also be invited to deliver special
+									lectures. The deliberation of conference will be
+									through presentation of papers and invited talks.
+								</span>
+							</p>
+						</div>
+					</div>
+					<div class="title-block row row-reverse">
+						<div class="col-md">
+							<div class="img-box">
+								<img src="./images/learn.jpg" alt="" class="img-fluid" style="max-height: 350px;">
+							</div>
+						</div>
+						<div class="col-md">
+							<h2>Objectives of NCIIT</h2>
+							<p>
+								<span>
+									The following are the primary objectives of the conference:
+								</span>
+							<ul class="no-list">
+								<li class="list-item">
+									To facilitate interaction and knowledge exchange among academia, research
+									organizations
+									and industry.
+								</li>
+								<li class="list-item">
+									To deliberate on new paradigms computing, cybernetics and intelligent systems
+									developing
+									international information processing infrastructures.
+								</li>
+								<li class="list-item">
+									To identify key research findings and to propose new applications development.
+								</li>
+								<li class="list-item">
+									To share prospective research areas and form specific research communities.
+								</li>
+								<li class="list-item">
+									To publish state-of-the-art technical report and a set of recommendations for
+									Business,
+									Industry and Government sectors.
+								</li>
+							</ul>
+							</p>
+						</div>
+					</div>
+					<div class="title-block row row-reverse">
+						<div class="col-md">
+							<div class="img-box">
+								<img src="./images/slider-img-3.jpg" alt="" class="img-fluid"
+									style="max-height: 350px;">
+							</div>
+						</div>
+						<div class="col-md">
+							<h2>About the Institute</h2>
+							<p>
+								<span>
+									The Bannari Amman Institute of Technology (BIT) is the fruit of decided efforts put
+									up by the Bannari Amman Group, a leading corporate house under the dynamic
+									chairmanship of a great visionary Thiru. S. V. Balasubramaniam in South India to
+									establish a center of excellence in Engineering & Technology. It is an impressive
+									campus, situated in a serene surrounding at the foothills of Nilgiris Mountains. The
+									institute is affiliated to Anna University, Chennai and approved by AICTE, New
+									Delhi. The Institute offers several undergraduate and postgraduate Programmes in
+									Engineering, Technology. Most of the courses are accredited by the National Board of
+									Accreditation (NBA), AICTE and NAAC.
+								</span>
+							</p>
+						</div>
+					</div>
+					<div class="title-block row">
+						<div class="col-md">
+							<div class="img-box">
+								<img src="./images/computer.svg" alt="welcome" class="img-fluid"
+									style="max-height: 350px;">
+							</div>
+						</div>
+						<div class="col-md">
+							<h2>About the Department</h2>
+							<p>
+								<span>
+									The Department of <b>Computer Science & Engineering</b> is a unique center of BIT
+									established in 1996. It offers a 4-year B.E - CSE programme and 2-year M.E - CSE
+									programme. The department has dedicated and specialized faculty members in different
+									areas of Computer Science and Engineering., with rich experience in academics,
+									industry and research. The department has well equipped and spacious laboratories
+									with modern computer equipment.
+								</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="footer-info row">
+					<div class="col-sm-2">
+						<h3>Quick Link</h3>
+						<ul class="no-list">
+							<li class="list-item">
+								<a href="#" class="list-nav">About</a>
+							</li>
+							<li class="list-item">
+								<a href="#" class="list-nav">Committee</a>
+							</li>
+							<li class="list-item">
+								<a href="#" class="list-nav">Register</a>
+							</li>
+							<li class="list-item">
+								<a href="#" class="list-nav">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md">
+						<h3>About</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, exercitationem molestias
+							aut doloremque temporibus maxime explicabo, assumenda natus excepturi totam labore odit
+							voluptatum iste voluptatibus ratione commodi facere rerum consequatur.
+						</p>
+					</div>
+					<div class="col-sm-1">
+						<h3>Contact</h3>
+						<ul class="no-list">
+							<li class="list-item">
+								<h4>Mr. P S Dinesh</h4>
+							</li>
+							<li class="list-item">Coordinator</li>
+							<li class="list-item">Department of CSE</li>
+							<li class="list-item">Bannari Amman Institute of Technology</li>
+							<li class="list-item">Mobile: +91 6369960928, 6379495090</li>
+							<li class="list-item">Phone: 04295 226191</li>
+						</ul>
+					</div>
+				</div>
 
+				<hr>
 
-        <div id="templatemo_middle">
+				<div class="copyrights row">
+					<span>All rights reserved | <a href="https://github.com/SasidharanL"
+							target="_blank">LetsBuild</a></span>
+					<div class="icon-group">
+						<div class="icon"><a href="#"><i class="fa-brands fa-facebook-square"></i></a></div>
+						<div class="icon"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+						<div class="icon"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+						<div class="icon"><a href="#"><i class="fa-brands fa-google-plus-g"></i></a></div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
-          <div id="slider">
-            <a href="#"><img src="images/slideshow/1.jpg" alt="Image 01" /></a>
-            <a href="#"><img src="images/slideshow/2.jpg" alt="Image 02" /></a>
-            <a href="#"><img src="images/slideshow/3.jpg" alt="Image 03" /></a>
-            <a href="#"><img src="images/slideshow/4.jpg" alt="Image 04" /></a>
-            <a href="#"><img src="images/slideshow/5.jpg" alt="Image 05" /></a>
-          </div>
+		<div class="pop-up">
+			<img src="./images/registration.png" alt="" class="img-fluid">
+			<a href="./guideline.html#price">Register</a>
+		</div>
+	</section>
 
-          <div id="intro">
-            <h2>National Conference on Innovations in Information Technology</h2>
-            <p>Date:25th & 26th February 2016
-            <p>
-            <p>Mail to: nciit@bitsathy.ac.in</p>
-
-          </div>
-        </div>
-        <div class="mainbar">
-          <div class="article">
-            <h2><span>ABOUT THE CONFERENCE</span> </h2>
-            <div class="clr"></div>
-            <p class="post-data" align="justify" style="font-size:16px">
-
-
-              The Computer Science and
-
-              Telecommunications have been used to occur
-
-              innovations in IT. The most promising research
-
-              directions and impacts such innovation might have
-
-              on society. Consistent themes emerge from this
-
-              conference. The aim of this conference is to provide
-
-              an opportunity for experts from Academic Institutions
-
-              and Industries to discuss and share their experiences,
-
-              strategy and vision on the research activities in the
-
-              field of Information Technology. Eminent Scientists
-
-              and Engineers will also be invited to deliver special
-
-              lectures. The deliberation of conference will be
-
-              through presentation of papers and invited talks.
-
-
-            <h2><span>ABOUT THE DEPARTMENT</span> </h2>
-            <div class="clr"></div>
-            <p class="post-data" align="justify" style="font-size:16px">
-
-
-
-              The Department of Computer Science &
-
-              Engineering is a unique center of BIT established
-
-              in 1996. It offers a 4 year B.E - CSE programme
-
-              and 2 year M.E - CSE programme. The department
-
-              has dedicated and specialized faculty members in
-
-              different areas of computer Science & Engg., with
-
-              rich experience in academics, industry and research.
-
-              The department has well equipped and spacious
-
-              laboratories with modern computer equipments.
-
-            <h2><span>ABOUT THE COLLEGE</span> </h2>
-            <div class="clr"></div>
-            <p class="post-data" align="justify" style="font-size:16px">
-
-
-              The Bannari Amman Institute of Technology (BIT) is the fruit of decided efforts put up by the Bannari
-              Amman Group, a leading corporate house under the dynamic chairmanship of a great visionary Dr. S. V.
-              Balasubramaniam in South India to establish a center of excellence in Engineering & Technology. It is an
-              impressive campus, situated in a serene surrounding at the foot hills of Nilgiris mountains. The institute
-              is affiliated to Anna University, Chennai and approved by AICTE, New Delhi. The Institute offers 14
-              undergraduate and 15 postgraduate Programmes in Engineering, Technology. The institution is ISO 9001:2008
-              certified for its quality education and most of the courses are accredited by National Board of
-              Accreditation (NBA), AICTE.
-
-          </div>
-        </div>
-        <div class="sidebar">
-
-          <div class="gadget">
-            <h2 class="star"><a href='Schedule.pdf'>
-                <Blink><span>Session Details</span></Blink>
-              </a></h2>
-            <h2 class="star"><span>Important </span> Dates</h2>
-            <div class="clr"></div>
-
-            <ul class="sb_menu">
-              <marquee direction="up" scrolldelay="150" onmouseover="this.stop();" onmouseout="this.start();">
-                <ul>
-                  <li>
-                    <p><strong>February 15, 2016</strong></p>
-                    <p>Receipt of contributed Papers</p>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <p><strong>February 19, 2016 </strong></p>
-                    <p>Intimation of accepted Papers</p>
-                  </li>
-                </ul>
-                <ul>
-                  <li><strong>February 22, 2016</strong>
-                    <p>Receipt of camera ready copy with registration fee </p>
-                  </li>
-                </ul>
-                <ul>
-                </ul>
-                <ul>
-                  <li><a href="Registration_Form.pdf">Registration Form</a> **Click Here</li>
-                </ul>
-              </marquee>
-            </ul>
-          </div>
-          <div class="gadget">
-            <h2 class="star"><span>Venue</span></h2>
-            <div class="clr"></div>
-            <ul class="ex_menu" style="font-size:18px">
-              <strong> Bannari Amman Institute of Technology,</strong>
-              <br />
-              Sathyamangalayam,<br />
-              Erode,<br />
-              Tamil Nadu,<br />
-              India.
-            </ul>
-          </div>
-        </div>
-        <div class="clr"></div>
-      </div>
-    </div>
-    <div class="fbg">
-      <div class="fbg_resize">
-        <div class="col c1">
-          <h2><span>Quick Links</span></h2>
-          <p style="margin-left:45px">
-            <a href="https://www.google.co.in/maps/preview#!q=Bannari+Amman+Institute+of+Technology%2C+Sathyamangalam+-+Athani+-+Aapakoodal+-+Erode+Road%2C+Alathukombai%2C+Tamil+Nadu&data=!1m4!1m3!1d6404!2d77.277136!3d11.4964986!4m15!2m14!1m13!1s0x3ba9215d6d1b28f9%3A0xf48946a7dfcfeb1a!3m8!1m3!1d4013436!2d78.288502!3d10.782836!3m2!1i1024!2i768!4f13.1!4m2!3d11.4952!4d77.276433"
-              target="_blank">Route Map</a><br />
-            <a href="contact.html"> Contact us</a><br />
-            <a href="Registration Form.doc"> Registration Form </a>
-          </p>
-        </div>
-        <div class="col c2">
-          <h2>&nbsp;</h2>
-          <p></p>
-        </div>
-        <div class="col c3">
-          <h2><span>Contact</span></h2>
-          <p style="margin-left:45px"><strong style="color:#d76002;">Ms. D. Sasikala</strong><br />
-            Coordinator, NCIIT 2016 <br />
-            Phone : <strong style="color:#d76002;">04295-226193</strong> <br />
-            Mobile : <strong style="color:#d76002;">9443647956</strong>
-
-          </p>
-        </div>
-        <div class="clr"></div>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="footer_resize">
-        <p class="lf">© Copyright <a href="http://bitsathy.ac.in">BIT</a>.</p>
-        <p class="rf">Designed by <a href="http://bitsathy.ac.in/cseeng.php">Dept of CSE</a></p>
-        <div class="clr"></div>
-      </div>
-    </div>
-  </div>
-
+	<script src="./js/script.js"></script>
 </body>
 
 </html>
