@@ -575,8 +575,31 @@ header {
         padding: 2rem 0rem;
         align-items: center;
 
-        .list-item {
-            padding: 10px 0px;
+        .no-list{
+            .list-item{
+                padding: 10px 0px 10px 0px;
+            }
+        }
+
+        .title-block{
+            h2 {
+                font-size: 26px;
+                padding: 5px 0px;
+                font-weight: 600;
+                position: relative;
+                letter-spacing: 1px;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 1px;
+                    left: -2px;
+                    height: 3px;
+                    width: 80px;
+                    border-radius: 2px;
+                    background-color: #017dc5;
+                }
+            }
         }
     }
 
@@ -588,7 +611,7 @@ header {
 
             h2 {
                 font-size: 26px;
-                padding: 8px 0px;
+                padding: 5px 0px;
                 font-weight: 600;
                 position: relative;
                 letter-spacing: 1px;

@@ -657,8 +657,27 @@ header .container nav .nav-list .list-item.active .nav-link::after {
           align-items: center;
 }
 
-.site-body .guide-banner .list-item {
-  padding: 10px 0px;
+.site-body .guide-banner .no-list .list-item {
+  padding: 10px 0px 10px 0px;
+}
+
+.site-body .guide-banner .title-block h2 {
+  font-size: 26px;
+  padding: 5px 0px;
+  font-weight: 600;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.site-body .guide-banner .title-block h2::before {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: -2px;
+  height: 3px;
+  width: 80px;
+  border-radius: 2px;
+  background-color: #017dc5;
 }
 
 .site-body .price-banner {
@@ -671,7 +690,7 @@ header .container nav .nav-list .list-item.active .nav-link::after {
 
 .site-body .price-banner .price-title h2 {
   font-size: 26px;
-  padding: 8px 0px;
+  padding: 5px 0px;
   font-weight: 600;
   position: relative;
   letter-spacing: 1px;
