@@ -435,6 +435,10 @@ header {
         }
     }
 
+    .welcome-msg{
+        line-height: 26px;;
+    }
+
     .info-banner {
         width: 100%;
         display: flex;
@@ -760,6 +764,7 @@ header {
     .list-item {
         list-style: circle;
         font-size: 16px;
+        padding: 5px 0px;
     }
 }
 

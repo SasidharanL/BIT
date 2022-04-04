@@ -496,6 +496,10 @@ header .container nav .nav-list .list-item.active .nav-link::after {
   font-size: 16px;
 }
 
+.site-body .welcome-msg {
+  line-height: 26px;
+}
+
 .site-body .info-banner {
   width: 100%;
   display: -webkit-box;
@@ -845,6 +849,7 @@ header .container nav .nav-list .list-item.active .nav-link::after {
 .styled-list .list-item {
   list-style: circle;
   font-size: 16px;
+  padding: 5px 0px;
 }
 
 footer {
