@@ -41,6 +41,10 @@ body .site-wrapper {
   padding: 0px;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 section {
   display: block;
   min-height: 300px;
@@ -448,7 +452,7 @@ header .container nav .nav-list .list-item.active .nav-link::after {
   font-size: 28px;
   font-weight: 700;
   letter-spacing: 1px;
-  margin: 20px 0px 10px 0px;
+  margin: 10px 0px 10px 0px;
 }
 
 .site-body .title-block p {
@@ -741,8 +745,14 @@ header .container nav .nav-list .list-item.active .nav-link::after {
   padding: 10px 0px;
 }
 
-.site-body .price-banner .price-wrapper .price-card .list-item {
+.site-body .price-banner .price-wrapper .price-card .no-list {
+  padding-left: 20px;
+}
+
+.site-body .price-banner .price-wrapper .price-card .no-list .list-item {
+  padding-left: 10px;
   font-size: 14px;
+  list-style-image: url("../images/tick.png");
 }
 
 .site-body .price-banner .price-wrapper .price-card h2 {
@@ -765,7 +775,7 @@ header .container nav .nav-list .list-item.active .nav-link::after {
   position: fixed;
   bottom: 80px;
   right: -20px;
-  width: 250px;
+  width: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -773,10 +783,11 @@ header .container nav .nav-list .list-item.active .nav-link::after {
       -ms-flex-align: center;
           align-items: center;
   padding: 10px 25px;
-  border-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
   background-color: #2eb3ff;
-  -webkit-transform: translateX(160px);
-          transform: translateX(160px);
+  -webkit-transform: translateX(110px);
+          transform: translateX(110px);
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
 }
@@ -784,7 +795,7 @@ header .container nav .nav-list .list-item.active .nav-link::after {
 .pop-up img {
   width: 30px;
   height: 30px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .pop-up a {
@@ -794,7 +805,7 @@ header .container nav .nav-list .list-item.active .nav-link::after {
   font-weight: 600;
   font-size: 12px;
   padding: 10px 0px;
-  margin-left: 30px;
+  margin-left: 20px;
   -webkit-transition: 150ms ease-in-out;
   transition: 150ms ease-in-out;
 }

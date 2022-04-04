@@ -41,6 +41,10 @@ body {
     }
 }
 
+.text-justify{
+    text-align: justify;
+}
+
 section {
     display: block;
     min-height: 300px;
@@ -395,7 +399,7 @@ header {
             font-size: 28px;
             font-weight: 700;
             letter-spacing: 1px;
-            margin: 20px 0px 10px 0px;
+            margin: 10px 0px 10px 0px;
         }
 
         p {
@@ -657,8 +661,14 @@ header {
                     }
                 }
 
-                .list-item{
-                    font-size: 14px;
+                .no-list{
+                    padding-left: 20px;
+
+                    .list-item{
+                        padding-left: 10px;
+                        font-size: 14px;
+                        list-style-image: url("../images/tick.png");
+                    }
                 }
 
                 h2{
@@ -688,19 +698,20 @@ header {
     position: fixed;
     bottom: 80px;
     right: -20px;
-    width: 250px;
+    width: 200px;
     display: flex;
     align-items: center;
     padding: 10px 25px;
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
     background-color: #2eb3ff;
-    transform: translateX(160px);
+    transform: translateX(110px);
     transition: 200ms ease-in-out;
 
     img{
         width: 30px;
         height: 30px;
-        margin-right: 20px;
+        margin-right: 10px;
     }
 
     a{
@@ -710,7 +721,7 @@ header {
         font-weight: 600;
         font-size: 12px;
         padding: 10px 0px;
-        margin-left: 30px;
+        margin-left: 20px;
         transition: 150ms ease-in-out;
 
         &:hover{
