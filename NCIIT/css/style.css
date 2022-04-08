@@ -246,6 +246,34 @@ img {
   max-width: 100%;
 }
 
+.accredion {
+  position: relative;
+  max-height: 185px;
+  overflow: hidden;
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.accredion-btn {
+  cursor: pointer;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accredion-btn i {
+  margin-right: 5px;
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+.accredion.active {
+  max-height: 100%;
+}
+
 header {
   width: 100%;
   display: -webkit-box;
@@ -445,7 +473,7 @@ header .container nav .nav-list .list-item.active .nav-link::after {
 
 .site-body .title-block {
   width: 100%;
-  margin: 0px;
+  margin: 0px 0px 25px 0px;
 }
 
 .site-body .title-block h2 {
@@ -471,7 +499,7 @@ header .container nav .nav-list .list-item.active .nav-link::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 3rem 0rem;
+  padding: 2rem 0rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -493,7 +521,7 @@ header .container nav .nav-list .list-item.active .nav-link::after {
 
 .site-body .welcome-banner .title-block p {
   text-align: justify;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .site-body .welcome-msg {
@@ -505,10 +533,7 @@ header .container nav .nav-list .list-item.active .nav-link::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 3rem 0rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 2rem 0rem;
 }
 
 .site-body .info-banner .title-block {
@@ -848,8 +873,8 @@ header .container nav .nav-list .list-item.active .nav-link::after {
 
 .styled-list .list-item {
   list-style: circle;
-  font-size: 16px;
   padding: 5px 0px;
+  line-height: 20px;
 }
 
 footer {

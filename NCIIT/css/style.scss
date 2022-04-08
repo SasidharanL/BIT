@@ -41,7 +41,7 @@ body {
     }
 }
 
-.text-justify{
+.text-justify {
     text-align: justify;
 }
 
@@ -119,7 +119,6 @@ section {
 }
 
 @media (min-width: 220px) {
-
     .col-lg,
     .col-md,
     .col-sm,
@@ -227,6 +226,28 @@ img {
 .img-fluid {
     width: 100%;
     max-width: 100%;
+}
+
+.accredion {
+    position: relative;
+    max-height: 185px;
+    overflow: hidden;
+    transition: 200ms ease-out;
+}
+
+.accredion-btn {
+    cursor: pointer;
+    display: flex !important;
+    align-items: center;
+
+    i{
+        margin-right: 5px;
+        transition: 200ms ease-out;
+    }
+}
+
+.accredion.active {
+    max-height: 100%;
 }
 
 header {
@@ -393,7 +414,7 @@ header {
 
     .title-block {
         width: 100%;
-        margin: 0px;
+        margin: 0px 0px 25px 0px;
 
         h2 {
             font-size: 28px;
@@ -417,7 +438,7 @@ header {
     .welcome-banner {
         width: 100%;
         display: flex;
-        padding: 3rem 0rem;
+        padding: 2rem 0rem;
         align-items: center;
 
         .row {
@@ -430,20 +451,19 @@ header {
 
             p {
                 text-align: justify;
-                font-size: 16px;
+                font-size: 14px;
             }
         }
     }
 
-    .welcome-msg{
-        line-height: 26px;;
+    .welcome-msg {
+        line-height: 26px;
     }
 
     .info-banner {
         width: 100%;
         display: flex;
-        padding: 3rem 0rem;
-        align-items: center;
+        padding: 2rem 0rem;
 
         .title-block {
             padding: 0px 15px;
@@ -452,7 +472,6 @@ header {
                 font-size: 16px;
             }
         }
-
     }
 
     .page-info-banner {
@@ -464,7 +483,6 @@ header {
         background-image: url("../images/banner.jpg");
 
         .page-info {
-
             span a,
             span i,
             h2 a {
@@ -478,7 +496,6 @@ header {
                 }
             }
 
-
             span {
                 font-size: 16px;
 
@@ -491,7 +508,6 @@ header {
                 font-size: 28px;
                 margin: 15px 0px 0px 0px;
             }
-
         }
     }
 
@@ -583,13 +599,13 @@ header {
         padding: 2rem 0rem;
         align-items: center;
 
-        .no-list{
-            .list-item{
+        .no-list {
+            .list-item {
                 padding: 10px 0px 10px 0px;
             }
         }
 
-        .title-block{
+        .title-block {
             h2 {
                 font-size: 26px;
                 padding: 5px 0px;
@@ -635,8 +651,8 @@ header {
                     background-color: #017dc5;
                 }
             }
-            
-            p{
+
+            p {
                 font-size: 16px;
             }
         }
@@ -646,16 +662,16 @@ header {
             position: relative;
             justify-content: space-between;
 
-            .price-card{
+            .price-card {
                 position: inherit;
                 padding: 20px 15px;
                 margin-bottom: 30px;
                 border-radius: 5px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 
-                .card-price{
+                .card-price {
                     margin-bottom: 10px;
-                    span{
+                    span {
                         width: auto;
                         font-size: 26px;
                         display: block;
@@ -665,21 +681,21 @@ header {
                     }
                 }
 
-                .no-list{
+                .no-list {
                     padding-left: 20px;
 
-                    .list-item{
+                    .list-item {
                         padding-left: 10px;
                         font-size: 14px;
                         list-style-image: url("../images/tick.png");
                     }
                 }
 
-                h2{
+                h2 {
                     margin: 0px 0px 10px 0px;
                 }
 
-                &::before{
+                &::before {
                     content: "";
                     position: absolute;
                     top: 0px;
@@ -698,7 +714,7 @@ header {
     }
 }
 
-.pop-up{
+.pop-up {
     position: fixed;
     bottom: 80px;
     right: -20px;
@@ -712,13 +728,13 @@ header {
     transform: translateX(110px);
     transition: 200ms ease-in-out;
 
-    img{
+    img {
         width: 30px;
         height: 30px;
         margin-right: 10px;
     }
 
-    a{
+    a {
         color: #ffffff;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -728,12 +744,12 @@ header {
         margin-left: 20px;
         transition: 150ms ease-in-out;
 
-        &:hover{
+        &:hover {
             color: #8400ff;
         }
     }
 
-    &:hover{
+    &:hover {
         transform: translateX(0px);
     }
 }
@@ -763,8 +779,8 @@ header {
 
     .list-item {
         list-style: circle;
-        font-size: 16px;
         padding: 5px 0px;
+        line-height: 20px;
     }
 }
 
@@ -795,7 +811,6 @@ footer {
     }
 
     p {
-        // text-align: justify;
         line-height: 20px;
     }
 
